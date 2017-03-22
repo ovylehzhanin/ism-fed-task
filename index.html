@@ -15,6 +15,14 @@
 			margin: 0 auto;
 			border: 2px dashed #ccc;
 		}
+
+		aside {
+			background-color: rgba(255, 150, 150, .5);
+		}
+
+		aside + section {
+			background-color: rgba(150, 150, 255 , .5);	
+		}
 	</style>
 </head>
 <body>
@@ -70,7 +78,7 @@
 		</div>
 	</nav>
 	<!-- Above content -->
-	<div class="above">
+	<section class="above">
 		<div class="center">
 			<div class="breadcrumb">
 				<a href="#">Home</a>
@@ -81,12 +89,12 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque convallis bibendum odio at mollis. Donec in sodales libero. Sed molestie odio ut neque sollicitudin lobortis. Aenean at placerat libero. Fusce scelerisque tortor a ante pellentesque, et facilisis orci suscipit. Etiam semper mauris non erat porttitor, quis malesuada quam faucibus. Fusce placerat lorem vitae justo convallis, sit amet </p>
 			</div>
 		</div>
-	</div>
+	</section>
 	<!-- Main -->
 	<main>
 		<div class="center">
 			<aside class="left">
-				<div class="filters">
+				<div class="active-filters">
 					<h3>Chosen Filters</h3>
 					<ul>
 						<li><a href="#">One</a></li>
@@ -94,7 +102,7 @@
 					</ul>
 					<div class="hyp"><a href="#">Remove all filters</a></div>
 				</div>
-				<div class="filters">
+				<div class="filter-box">
 					<h3>Type Fiets</h3>
 					<ul>
 						<li><a href="#">Stadsfietsen</a></li>
@@ -110,14 +118,14 @@
 					</ul>
 					<div class="hyp"><a href="#">Meer...</a></div>
 				</div>
-				<div class="filters">
+				<div class="filter-box">
 					<h3>Gender</h3>
 					<select name="" id="">
 						<option value="">one</option>
 						<option value="">two</option>
 					</select>
 				</div>
-				<div class="filters">
+				<div class="filter-box">
 					<h3>Brands</h3>
 					<ul>
 						<li><a href="#">Gazelle</a></li>
@@ -132,11 +140,11 @@
 					</ul>
 					<div class="hyp"><a href="#">Meer...</a></div>	
 				</div>
-				<div class="filters">
+				<div class="filter-box">
 					<h3>Price range</h3>
 					<div class="range-filter"></div>
 				</div>
-				<div class="filters">
+				<div class="filter-box">
 					<h3>Colors</h3>
 					<ul>
 						<li><a href="#">Zwart</a></li>
@@ -153,8 +161,8 @@
 					<div class="hyp"><a href="#">Meer...</a></div>	
 				</div>
 			</aside>
-			<section class="right product-list">
-				<div class="settings">
+			<section class="right">
+				<!-- <div class="settings">
 					<span class="counter">130 products in selection</span>
 					<div class="view-mode">List, Grid</div>
 					<div class="sort-by">
@@ -163,8 +171,8 @@
 							<option value="">Price - asceding</option>
 						</select>
 					</div>
-				</div>
-				<div class="products">
+				</div> -->
+				<section class="product-grid">
 					
 					<div class="product">
 						<img src="" alt="product-image">
@@ -173,10 +181,14 @@
 						<p class="product-price">€ 686,25</p>
 						<button class="add-to-basket">Add to basket</button>
 					</div>
-					
-				</div>
-				<div class="show-next"><button>Show next 25 products</button></div>
-				<div class="recently-viewed">
+					<!-- Add other products here... -->
+
+					<div class="show-next">
+						<button>Show next 25 products</button>
+					</div>
+				</section>
+				
+				<section class="recently-viewed">
 					<h2>Recently viewed</h2>
 					<a href="#">View all</a>
 					<a href="#">Clear list</a>
@@ -185,8 +197,11 @@
 						<p>two</p>
 						<p>three</p>
 					</div>
-				</div>
+				</section>
+
 			</section>
+
+			<!-- Our features -->
 			<section class="features">
 				<ul>
 					<li>Free returns</li>
