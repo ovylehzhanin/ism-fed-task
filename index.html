@@ -3,94 +3,87 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Sana shop</title>
-	<!-- Add test styles -->
-	<style>
-		body {
-			font-family: sans-serif;
-			font-size: 14px;
-		}
-
-		.center {
-			width: 70%;
-			margin: 0 auto;
-			border: 2px dashed #ccc;
-		}
-
-		aside {
-			background-color: rgba(255, 150, 150, .5);
-		}
-
-		aside + section {
-			background-color: rgba(150, 150, 255 , .5);	
-		}
-	</style>
+	<link rel="stylesheet" href="styles/mobile.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<!-- Header -->
 	<header>
-		<div class="center">
-			<div class="header-top">
-				<p>If you have any questions, call us (<a href="tel:0102436000">010 2436000</a>) of visit our <a href="#">customer service page</a></p>
-				<ul class="action">
-					<li>
-						<ul class="action-sub-menu"><a href="#" class="current-item">English</a>
-							<li><a href="href#">Nederlands</a></li>
-							<li><a href="href#">Deutsch</a></li>
-							<li><a href="href#">Français</a></li>
-						</ul>
-					</li>
-					<li><a href="#">Customer service</a></li>
-					<li><a href="#">Login</a></li>
-					<li>My account
-						<ul class="action">
-							<li><a href="#">Welcome Jouke de Vries</a></li>
-							<li><a href="#">Register</a></li>
-							<li><a href="#">My account</a></li>
-							<li><a href="#">My wishlist</a></li>
-							<li><a href="#">Customer service</a></li>
-							<li><a href="#">Quick order</a></li>
-							<li><a href="#">Represent customer</a></li>
-							<li><a href="#">Logout</a></li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-			<div class="header-bottom">
-				<a class="page-logo" href="#"><img src="images/sana-logo.png" alt="page-logo" width="157" height="42"></a>
-				<input type="search" placeholder="Search...">
-				<div class="shopping-cart"></div>
-			</div>
-		</div>
-	</header>
-	<!-- Navigation -->
-	<nav>
-		<div class="center">
-			<ul class="navigation">
-				<li><a href="#">new</a></li>
-				<li><a href="#">city bikes</a></li>
-				<li><a href="#">touring bikes</a></li>
-				<li><a href="#">allround bikes</a></li>
-				<li><a href="#">sporting bikes</a></li>
-				<li><a href="#">brands</a></li>
-				<li><a href="#">about us</a></li>
-				<li><a href="#">contact</a></li>
+		
+		<div class="header-top">
+			
+			<section class="contact-info">If you have any questions, call us (<a href="tel:0102436000">010 2436000</a>) of visit our <a href="#">customer service page</a></section>
+			
+			<ul class="action">
+				<li class="language">English
+					<!-- <ul>
+						<li><a href="#">English</a></li>
+						<li><a href="#">Nederlands</a></li>
+						<li><a href="#">Deutsch</a></li>
+						<li><a href="#">Français</a></li>
+					</ul> -->
+				</li>
+				<li class="hyp"><a href="#">Customer service</a></li>
+				<li class="hyp"><a href="#">Login</a></li>
+				<li class="my-account">My account
+					<!-- <ul>
+						<li><a href="#">Welcome Jouke de Vries</a></li>
+						<li><a href="#">Register</a></li>
+						<li><a href="#">My account</a></li>
+						<li><a href="#">My wishlist</a></li>
+						<li><a href="#">Customer service</a></li>
+						<li><a href="#">Quick order</a></li>
+						<li><a href="#">Represent customer</a></li>
+						<li><a href="#">Logout</a></li>
+					</ul> -->		
+				</li>
 			</ul>
+
 		</div>
-	</nav>
-	<!-- Above content -->
+
+		<div class="header-middle">
+			<div class="nav-opener"></div>
+			<a class="page-logo" href="#"><img src="images/sana-logo.png" alt="page-logo" width="157" height="42"></a>
+			<div class="search-group">
+				<input type="search" placeholder="Search..."><button>Go!</button>
+			</div>
+			<div class="shopping-cart"></div>
+		
+		</div>
+
+		<div class="header-bottom">
+			
+			<nav>
+				<ul>
+					<li><a href="#">new</a></li>
+					<li><a href="#">city bikes</a></li>
+					<li><a href="#">touring bikes</a></li>
+					<li><a href="#">allround bikes</a></li>
+					<li><a href="#">sporting bikes</a></li>
+					<li><a href="#">brands</a></li>
+					<li><a href="#">about us</a></li>
+					<li><a href="#">contact</a></li>
+				</ul>
+			</nav>
+
+		</div>
+		
+
+	</header>
 	<section class="above">
-		<div class="center">
-			<div class="breadcrumb">
-				<a href="#">Home</a>
-				<a href="#">New</a>
-			</div>
-			<div class="heading">
-				<h1>bicycles new</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque convallis bibendum odio at mollis. Donec in sodales libero. Sed molestie odio ut neque sollicitudin lobortis. Aenean at placerat libero. Fusce scelerisque tortor a ante pellentesque, et facilisis orci suscipit. Etiam semper mauris non erat porttitor, quis malesuada quam faucibus. Fusce placerat lorem vitae justo convallis, sit amet </p>
-			</div>
+	
+		<div class="breadcrumb">
+			<a href="#">Home</a>
+			<a href="#">New</a>
 		</div>
+		<div class="heading">
+			<h1>bicycles new</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque convallis bibendum odio at mollis. Donec in sodales libero. Sed molestie odio ut neque sollicitudin lobortis. Aenean at placerat libero. Fusce scelerisque tortor a ante pellentesque, et facilisis orci suscipit. Etiam semper mauris non erat porttitor, quis malesuada quam faucibus. Fusce placerat lorem vitae justo convallis, sit amet </p>
+		</div>
+		
 	</section>
-	<!-- Main -->
+
+
+	<!-- Main content -->
 	<main>
 		<div class="center">
 			<aside class="left">
@@ -162,26 +155,17 @@
 				</div>
 			</aside>
 			<section class="right">
-				<!-- <div class="settings">
-					<span class="counter">130 products in selection</span>
-					<div class="view-mode">List, Grid</div>
-					<div class="sort-by">
-						<span>Sort by:</span>
-						<select name="" id="">
-							<option value="">Price - asceding</option>
-						</select>
-					</div>
-				</div> -->
+				
 				<section class="product-grid">
 					
 					<div class="product">
-						<img src="" alt="product-image">
+						<img src="images/product-image.jpg" alt="product-image" width="214" height="211">
 						<h3 class="product-title">Mongoose Agatz Elite Black</h3>
-						<p class="product-spec">Rim | Mongoose | 28"</p>
+						<p class="product-attributes">Rim | Mongoose | 28"</p>
 						<p class="product-price">€ 686,25</p>
 						<button class="add-to-basket">Add to basket</button>
 					</div>
-					<!-- Add other products here... -->
+					
 
 					<div class="show-next">
 						<button>Show next 25 products</button>
@@ -192,16 +176,16 @@
 					<h2>Recently viewed</h2>
 					<a href="#">View all</a>
 					<a href="#">Clear list</a>
-					<div class="recently-viewed-products">
-						<p>one</p>
-						<p>two</p>
-						<p>three</p>
-					</div>
+					<ul class="recent-products">
+						<li>Test-1</li>
+						<li>Test-2</li>
+						<li>Test-3</li>
+					</ul>
 				</section>
 
 			</section>
 
-			<!-- Our features -->
+			
 			<section class="features">
 				<ul>
 					<li>Free returns</li>
@@ -213,7 +197,8 @@
 
 		</div>
 	</main>
-	
+
+	<!-- Page footer -->
 	<footer>
 		<div class="center">
 			<div class="footer-top">
@@ -263,5 +248,10 @@
 			</div>
 		</div>
 	</footer>
+	<script
+  		src="http://code.jquery.com/jquery-2.2.4.js"
+		integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+		crossorigin="anonymous"></script>
+	<script src="scripts/main.js"></script>
 </body>
 </html>
