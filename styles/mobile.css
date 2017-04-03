@@ -132,32 +132,38 @@ header {
 		display: none;
 	}
 
-	main {
+main {
+	display: flex;
+	flex-direction: column;
+}
+
+		main .right .product-grid {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+	main .features ul {
 		display: flex;
 		flex-direction: column;
 	}
 
-			main .right .product-grid {
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-			}
+	main .right .recently-viewed h2 {
+		display: inline;
+	}
 
-		main .features ul {
-			display: flex;
-			flex-direction: column;
-		}
+	main .right .recently-viewed h2,
+	main .right .recently-viewed h2 ~ a {
+		margin-right: 1em;
+	}
 
-		main .right .recently-viewed h2 {
-			display: inline;
-		}
+	main .right .recent-products {
+		display: flex;
+		flex-direction: column;
+	}
 
-		main .right .recently-viewed h2,
-		main .right .recently-viewed h2 ~ a {
-			margin-right: 1em;
-		}
-
-		main .right .recent-products {
-			display: flex;
-			flex-direction: column;
-		}
+.footer-top,
+.footer-bottom {
+	display: flex;
+	flex-direction: column;
+}

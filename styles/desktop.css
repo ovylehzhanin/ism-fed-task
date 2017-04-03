@@ -34,6 +34,16 @@
 		width: 50%;
 	}
 
+	.header-bottom .main-menu {
+		position: static;
+	}
+
+		.header-bottom .main-menu {
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+		}
+
 	.above .heading p {
 		display: block;
 	}
@@ -54,4 +64,9 @@
 		width: 33.33%;
 	}
 
+	.footer-top .sitemap,
+	.footer-top .social,
+	.footer-top .subscribe {
+		width: 33.33%;
+	}
 }

@@ -7,7 +7,7 @@ footer {
 
 .header-top,
 .left {
-	background-color: rgba(255, 80, 80, .7);
+	background-color: rgba(255, 80, 80, .5);
 }
 
 header img {
@@ -20,7 +20,7 @@ header img {
 
 .main-menu,
 .right .product-grid {
-	background-color: rgba(0, 102, 255, .7);
+	background-color: rgba(0, 102, 255, .5);
 }
 
 .features li {

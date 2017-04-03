@@ -93,4 +93,35 @@
 			main .right .recent-products li {
 				width: 50%;
 			}
+
+	.footer-top,
+	.footer-bottom {
+		flex-direction: row;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	.footer-bottom {
+		align-items: center;
+	}
+
+		.footer-top .sitemap,
+		.footer-top .social {
+			width: 50%;
+		}
+
+		.footer-top .subscribe {
+			width: 100%;
+		}
+
+		.footer-bottom .copyrights,
+		.footer-bottom .footer-links {
+			width: 50%;
+		}
+
+		.footer-bottom .footer-links ul {
+			display: flex;
+			flex-direction: row;
+		}
+
 }
