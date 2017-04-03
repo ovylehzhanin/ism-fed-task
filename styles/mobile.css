@@ -1,3 +1,5 @@
+/*'Montserrat', */
+
 /*
 	(?) Better use 12 grid system
 	8.33
@@ -25,15 +27,79 @@ footer ul {
 }
 
 body {
-	font-family: sans-serif;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: normal;
 }
 
 header ul,
 aside ul,
+.recently-viewed ul,
+.features ul, 
 footer ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
 
+header {
+	display: flex;
+	flex-direction: column;
+}
 
+.header-top {
+	display: inherit;
+	flex-direction: row;
+	justify-content: space-between;
+	order: 2;
+}
+
+	.header-top .contact-info {
+		display: none;
+	}
+
+	.header-top .action {
+		display: inherit;
+		flex-direction: column;
+	}
+
+		.header-top .action li { padding: .5em; }
+
+.header-middle {
+	display: inherit;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	order: 1;
+}
+
+	.header-middle .nav-opener {
+		order: 1;
+		width: 62px;
+		height: 62px;
+		background: #ccc;
+	}
+	
+	.header-middle .page-logo {
+		order: 2;
+	}
+
+	.header-middle .search-group {
+		order: 4;
+		width: 100%;
+	}
+
+	.header-middle .shopping-cart {
+		order: 3;
+		width: 62px;
+		height: 62px;
+		background: #ccc;
+	}
+
+.header-bottom {
+	order: 3;
+}
+
+	.header-bottom li {
+		padding: 0.5em;
+	}

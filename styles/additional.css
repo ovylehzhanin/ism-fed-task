@@ -4,3 +4,11 @@ main,
 footer {
 	border: 1px dotted red;
 }
+
+.header-top {
+	background-color: rgba(200, 50, 50, .7);
+}
+
+header img {
+	border: 1px dotted red;
+}
