@@ -62,6 +62,8 @@ header {
 		display: inherit;
 		flex-direction: column;
 	}
+		
+		.header-top .action .hyp { display: none; }
 
 		.header-top .action li { padding: .5em; }
 
@@ -84,10 +86,30 @@ header {
 		order: 2;
 	}
 
-	.header-middle .search-group {
+	.header-middle .search-box {
 		order: 4;
 		width: 100%;
+		padding: 2em 2em;
 	}
+
+		.header-middle .input-wrapper {
+			height: 40px;
+			position: relative;
+		}
+
+		.header-middle input {
+			width: 100%;
+			height: 100%;
+			outline: none;
+			
+		}
+
+		.header-middle button {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+		}
 
 	.header-middle .shopping-cart {
 		order: 3;
@@ -103,3 +125,39 @@ header {
 	.header-bottom li {
 		padding: 0.5em;
 	}
+
+.above { background: #ccc; }
+
+	.above .heading p {
+		display: none;
+	}
+
+	main {
+		display: flex;
+		flex-direction: column;
+	}
+
+			main .right .product-grid {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+
+		main .features ul {
+			display: flex;
+			flex-direction: column;
+		}
+
+		main .right .recently-viewed h2 {
+			display: inline;
+		}
+
+		main .right .recently-viewed h2,
+		main .right .recently-viewed h2 ~ a {
+			margin-right: 1em;
+		}
+
+		main .right .recent-products {
+			display: flex;
+			flex-direction: column;
+		}

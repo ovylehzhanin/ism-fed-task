@@ -5,10 +5,25 @@ footer {
 	border: 1px dotted red;
 }
 
-.header-top {
-	background-color: rgba(200, 50, 50, .7);
+.header-top,
+.left {
+	background-color: rgba(255, 80, 80, .7);
 }
 
 header img {
 	border: 1px dotted red;
 }
+
+.search-box {
+	border: 1px dotted red;
+}
+
+.main-menu,
+.right .product-grid {
+	background-color: rgba(0, 102, 255, .7);
+}
+
+.features li {
+	border: 1px dotted blue;
+}
+
