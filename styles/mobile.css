@@ -64,7 +64,7 @@ header {
 
 		.header-top .action li { 
 			height: 40px;
-			padding-left: 16px;
+			padding-left: 15px;
 			line-height: 40px;
 			font-size: 13px;
 		}
@@ -143,7 +143,7 @@ header {
 
 	.header-bottom .main-menu li {
 		height: 40px;
-		padding-left: 16px;
+		padding-left: 15px;
 	}
 
 	.header-bottom .main-menu li a {
@@ -177,7 +177,7 @@ main {
 				font-family: 'Pathway Gothic One', sans-serif;
 				font-size: 22px;
 				line-height: 57px;
-				padding-right: 50px;
+				padding-right: 23px;
 				color: blue;
 				user-select: none;
 				text-transform: uppercase;
@@ -187,17 +187,21 @@ main {
 				content: "";
 				display: block;
 				position: absolute;
-				top: 3px;
+				top: 10px;
 				right: 0;
-				width: 20px;
-				height: 20px;
+				width: 11px;
+				height: 7px;
 				background: #000;
 			}
 
 		main .left .active-filters,
 		main .left .filter-box {
-			padding-left: 18px;
+			padding-left: 15px;
 			margin-bottom: 37px;
+		}
+
+		main .left .filter-box:last-child {
+			margin-bottom: 5px;
 		}
 
 		main .left .active-filters h3,
@@ -223,6 +227,14 @@ main {
 			line-height: 24px;
 		}
 
+		main .left .active-filters ul a {
+			padding-right: 21px;
+		}
+
+		main .left .hyp {
+			font-weight: bold;
+		}
+
 		main .left .filter-box ul li label {
 			line-height: 24px;
 			user-select: none;
@@ -232,10 +244,45 @@ main {
 			margin-right: 10px;
 		}
 
+		main .right {
+			margin-top: 12px;
+		}
+
+		main .right .view-settings,
 		main .right .product-grid {
 			display: flex;
-			flex-direction: column;
 			align-items: center;
+		}
+
+		main .right .view-settings {
+			padding-left: 15px;
+			height: 34px;
+			margin-bottom: 11px;
+		}
+
+		main .right .view-settings span {
+			font-size: 12px;
+		}
+
+		main .right .view-settings * {
+			margin-right: 10px;
+		}
+
+		main .right .view-settings .mode {
+			width: 24px;
+			height: 24px;
+		}
+
+		main .right .product-grid {
+			padding: 0 15px;
+			flex-direction: column;
+		}
+
+		main .right .product-grid .product {
+			box-sizing: border-box;
+			width: 100%;
+			min-height: 370px;
+			padding: 14px 0;
 		}
 
 		main .right .product-grid .product img,
@@ -244,34 +291,81 @@ main {
 			margin: 0 auto;
 		}
 
+		main .right .product-grid .product h3 {
+			margin-top: 18px;
+			font-size: 12px;
+		}
+
 		main .right .product-grid .product h3,
 		main .right .product-grid .product p {
 			text-align: center;
 		}
 
-		main .right .product-grid .product button { width: 100px; }
+		main .right .product-grid .product .product-stock {
+			display: none;
+		}
+
+		main .right .product-grid .product .product-price {
+			font-size: 20px;
+			font-weight: bold;
+		}
+
+		main .right .product-grid .product button { 
+			width: 125px; 
+			height: 30px;
+			font-family: 'Pathway Gothic One', sans-serif;
+			font-size: 18px;
+			text-transform: uppercase;	
+		}
 
 	main .features ul {
 		display: flex;
 		flex-direction: column;
+		padding: 29px 15px;
+		background: #ccc;
 	}
 
 		main .features ul li {
-			padding: 1em;
+			position: relative;
+			margin: 0 auto;
+			padding-left: 34px;
+			height: 18px;
+			width: 100%;
+			font-family: 'Pathway Gothic One', sans-serif;
+			font-size: 20px;
+			line-height: 18px;
+			text-transform: uppercase;
 			box-sizing: border-box;
 		}
 
+		main .features ul li:before {
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			content: "";
+			width: 18px;
+			height: 18px;
+			background-color: #ddd;
+		}
+
+		main .features ul li:not(:last-child) {
+			margin-bottom: 28px;
+		}
+
 	main .right .recently-viewed {
-		padding: 0.5em;
+		padding: 0 15px;
 	}
 
 	main .right .recently-viewed h2 {
-		display: inline;
+		font-family: 'Pathway Gothic One', sans-serif;
+		font-size: 26px;
+		line-height: 24px;
+		text-transform: uppercase;
 	}
 
-	main .right .recently-viewed h2,
-	main .right .recently-viewed h2 ~ a {
-		margin-right: 1em;
+	main .right .recently-viewed a {
+		display: none;
 	}
 
 	main .right .recent-products {
@@ -279,8 +373,19 @@ main {
 		flex-direction: column;
 	}
 
+	main .right .recent-products img {
+		float: left;
+		margin-right: 20px;
+	}
+
+	main .right .recently-viewed h3 {
+		margin: 0;
+		padding: 0;
+	}
+
 .footer-top,
 .footer-bottom {
+	padding: 0 15px;
 	display: flex;
 	flex-direction: column;
 }
