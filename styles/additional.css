@@ -7,9 +7,7 @@
 }
 
 main .right .view-settings,
-main .right .product,
-main .features ul,
-main .features ul li {
+main .right .product {
 	box-shadow: 0 0 1px 0 #000;
 }
 
