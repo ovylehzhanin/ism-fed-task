@@ -163,10 +163,6 @@ main {
 	flex-direction: column;
 }
 
-		main .left {
-			background: #ccc;
-		}
-
 		main .left .filter-opener {
 			height: 57px;
 			text-align: center;
@@ -280,7 +276,7 @@ main {
 
 		main .right .product-grid .product {
 			box-sizing: border-box;
-			width: 100%;
+			width: 235px;
 			min-height: 370px;
 			padding: 14px 0;
 		}
@@ -328,24 +324,24 @@ main {
 		main .features ul li {
 			position: relative;
 			margin: 0 auto;
+			box-sizing: border-box;
 			padding-left: 34px;
 			height: 18px;
 			width: 100%;
 			font-family: 'Pathway Gothic One', sans-serif;
-			font-size: 20px;
+			font-size: 19px;
 			line-height: 18px;
 			text-transform: uppercase;
-			box-sizing: border-box;
 		}
 
 		main .features ul li:before {
 			display: block;
 			position: absolute;
-			top: 0;
-			left: 0;
+			top: -1px;
+			left: -1px;
 			content: "";
-			width: 18px;
-			height: 18px;
+			width: 20px;
+			height: 20px;
 			background-color: #ddd;
 		}
 
@@ -383,9 +379,66 @@ main {
 		padding: 0;
 	}
 
-.footer-top,
-.footer-bottom {
+footer h3 {
+	font-family: 'Pathway Gothic One', sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+footer .footer-top,
+footer .footer-bottom {
 	padding: 0 15px;
 	display: flex;
 	flex-direction: column;
 }
+
+	footer .footer-top ul,
+	footer .footer-bottom ul {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+		footer .footer-top .sitemap ul li,
+		footer .footer-bottom .footer-links ul li {
+			width: 50%;
+			margin-bottom: 15px;
+		}
+
+		footer .footer-top .social ul li a {
+			display: block;
+			width: 25px;
+			height: 25px;
+			margin-right: 6px;
+			border-radius: 3px;
+			background: #ccc;
+		}
+
+		footer .footer-top .subscribe .form-group {
+			width: 100%;
+			height: 36px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+
+		footer .footer-top .subscribe p {
+			display: none;
+		}
+
+		footer .footer-top .subscribe .form-group input {
+			height: auto;
+		}
+
+		footer .footer-top .subscribe .form-group input[type="text"] {
+			width: 60%;
+		}
+
+		footer .footer-top .subscribe .form-group input[type="submit"] {
+			width: 37.93103448275862%;
+		}
+
+		footer .footer-bottom .copyrights p {
+			text-align: center;
+		}
