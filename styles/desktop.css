@@ -1,4 +1,4 @@
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1200px) {
 	
 	.header-top,
 	.header-middle,
@@ -10,15 +10,17 @@
 	}
 
 	.header-top {
+		flex-direction: row;
+		justify-content: space-between;
 		font-size: 11px;
-		padding-top: 8px;
+		line-height: 1;
+		padding-top: 10px;
 		margin-bottom: 35px;
 	}
 
 		.header-top .contact-info {
 			display: block;
 			height: 18px;
-			line-height: 18px;
 			position: relative;
 			padding-left: 30px;
 		}
@@ -28,7 +30,7 @@
 				content: "";
 				width: 18px;
 				height: 18px;
-				top: 0;
+				top: -4px;
 				left: 0;
 				background-color: #000;
 			}
@@ -36,6 +38,16 @@
 		.header-top .action {
 			position: static;
 		}
+
+			.header-top .action li {
+				padding: 0 1em;
+				height: auto;
+				line-height: 1;
+			}
+
+			.header-top .action li a {
+				font-size: 11px;
+			}
 
 			.header-top .action .hyp {
 				display: block;
@@ -87,16 +99,12 @@
 				text-decoration: underline;
 			}
 
-	.above {
-		min-height: 190px;
-	}
-
-	.above .heading p {
-		display: block;
-	}
+.above .heading p {
+	display: block;
+}
 
 	main .right .product-grid .product {
-		width: 33.33%;
+		width: 243px;
 	}
 
 		main .features ul li {
