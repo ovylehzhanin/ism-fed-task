@@ -42,15 +42,12 @@
 
 	.header-top .action>li {
 		min-height: auto;
-	}
-
-	.header-top .action li {
 		padding: 0 1em;
 		height: auto;
 		line-height: 1;
 	}
 
-	.header-top .action li a {
+	.header-top .action>li>a {
 		font-size: 11px;
 	}
 
@@ -58,11 +55,11 @@
 		display: block;
 	}
 
-	.header-top .action .sub-action {
-		display: none;
+	.header-top .action .sub-action li {
+		line-height: 40px;
 	}
 
-	.header-top .action .hover-opener:hover .sub-action { display: none; }
+	.header-top .action .hover-opener:hover .sub-action { display: block; }
 
 	.header-middle {
 		box-sizing: border-box;

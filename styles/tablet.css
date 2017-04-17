@@ -23,6 +23,12 @@
 	.header-top .action .sub-action {
 		display: none;
 		position: absolute;
+		z-index: 3;
+	}
+
+	.header-top .action .sub-action li a {
+		font-size: 11px;
+		line-height: 30px;
 	}
 
 	.header-top .action .language .sub-action { width: 127px; }
