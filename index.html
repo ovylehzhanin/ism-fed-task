@@ -31,18 +31,17 @@
 			<div class="action-menu">
 				
 				<div class="action-menu__item
-							action-menu__dropdown
 							language-switcher">
 
-					<div class="sub-menu__expander">
+					<div class="action-sub-menu__expander">
 						<img src="" alt="en" class="language-switcher__img"><span>Language: English</span>	
 					</div>
 
-					<ul class="sub-menu">
-						<li class="sub-menu__item"><a href="#"><img src="" alt="gb" class="language-switcher__img">English</a></li>
-						<li class="sub-menu__item"><a href="#"><img src="" alt="nl" class="language-switcher__img">Nederlands</a></li>
-						<li class="sub-menu__item"><a href="#"><img src="" alt="de" class="language-switcher__img">Deutsch</a></li>
-						<li class="sub-menu__item"><a href="#"><img src="" alt="fr" class="language-switcher__img">Français</a></li>
+					<ul class="action-sub-menu">
+						<li class="action-sub-menu__item"><a href="#"><img src="" alt="gb" class="language-switcher__img">English</a></li>
+						<li class="action-sub-menu__item"><a href="#"><img src="" alt="nl" class="language-switcher__img">Nederlands</a></li>
+						<li class="action-sub-menu__item"><a href="#"><img src="" alt="de" class="language-switcher__img">Deutsch</a></li>
+						<li class="action-sub-menu__item"><a href="#"><img src="" alt="fr" class="language-switcher__img">Français</a></li>
 					</ul>
 
 				</div>
@@ -58,22 +57,22 @@
 				</div>
 				
 				<div class="action-menu__item
-							action-menu__dropdown
 							my-account">
 					
 					<div class="sub-menu__expander">
-						<i class="icon"></i><span>Account</span>
+						<i class="sub-menu__expander__icon"></i>
+						<span>Account</span>
 					</div>
 
-					<ul class="sub-menu">
-						<li class="sub-menu__item"><a href="#">Welcome Jouke de Vries</a></li>
-						<li class="sub-menu__item"><a href="#">Register</a></li>
-						<li class="sub-menu__item"><a href="#">My account</a></li>
-						<li class="sub-menu__item"><a href="#">My wishlist</a></li>
-						<li class="sub-menu__item"><a href="#">Customer service</a></li>
-						<li class="sub-menu__item"><a href="#">Quick order</a></li>
-						<li class="sub-menu__item"><a href="#">Represent customer</a></li>
-						<li class="sub-menu__item"><a href="#">Logout</a></li>
+					<ul class="action-sub-menu">
+						<li class="action-sub-menu__item"><a href="#">Welcome Jouke de Vries</a></li>
+						<li class="action-sub-menu__item"><a href="#">Register</a></li>
+						<li class="action-sub-menu__item"><a href="#">My account</a></li>
+						<li class="action-sub-menu__item"><a href="#">My wishlist</a></li>
+						<li class="action-sub-menu__item"><a href="#">Customer service</a></li>
+						<li class="action-sub-menu__item"><a href="#">Quick order</a></li>
+						<li class="action-sub-menu__item"><a href="#">Represent customer</a></li>
+						<li class="action-sub-menu__item"><a href="#">Logout</a></li>
 					</ul>		
 				</div>
 
@@ -85,68 +84,83 @@
 
 
 
-		<div class="header-middle">
-			<div class="menu-opener"></div>
-			<a class="page-logo" href="#"><img src="images/sana-logo.png" alt="page-logo" width="157" height="42"></a>
-			<div class="search-box mobile-item">
-				<form action="search" action="get">
-					<div class="input-wrapper">
-						<input type="search" placeholder="Product name or item number..."><button>Go!</button>
+		<section class="header__middle">
+			
+			<div class="main-menu-opener"></div>
+			
+			<a class="page-logo" href="#"><img src="images/sana-logo.png" alt="page-logo-image" class="page-logo__image"></a>
+			
+			<form class="search-form">
+					<div class="search-form__wrapper">
+						<input class="search-form__input" type="search" placeholder="Product name or item number...">
+						<button class="search-form__button"></button>
 					</div>
-				</form>
-			</div>
+			</form>
+			
 			<div class="shopping-cart"></div>
-		</div>
+
+		</section>
 
 
-
-
-
-
-
-		<div class="header-bottom mobile-item">
+		<div class="header__bottom">
 			<nav>
+
 				<ul class="main-menu">
-					<li><a href="#">new</a></li>
-					<li><a href="#">city bikes</a></li>
-					<li class="extended">
-						<a href="#" class="list-expander">touring bikes</a>
-						<div class="sub-category">
-							<ul><span><a href="#">Clothing</a></span>
-								<li><a href="#">Sweaters</a></li>
-								<li><a href="#">Pants</a></li>
-								<li><a href="#">Jeans</a></li>
-								<li><a href="#">Jackets & Coats</a></li>
-								<li><a href="#">Cardigans</a></li>
-								<li><a href="#">View more basics</a></li>
+					<li class="main-menu__item"><a href="#">new</a></li>
+					<li class="main-menu__item"><a href="#">city bikes</a></li>
+					<li class="main-menu__item sub-menu__expander"><a href="#">touring bikes</a>
+						<!-- SUB-MENU start -->
+						<div class="sub-menu">
+							<ul class="sub-menu-lvl-1__item">
+								<span class="sub-menu-lvl-1__head">
+									<a class="sub-menu-lvl-1__link" href="#">Clothing</a>
+								</span>
+								<!-- list -->
+								<li class="sub-menu-lvl-2__item"><a class="sub-menu-lvl-2__link" href="#">Sweaters</a></li>
+								<li class="sub-menu-lvl-2__item"><a class="sub-menu-lvl-2__link" href="#">Pants</a></li>
+								<li class="sub-menu-lvl-2__item"><a class="sub-menu-lvl-2__link" href="#">Jeans</a></li>
+								<li class="sub-menu-lvl-2__item"><a class="sub-menu-lvl-2__link" href="#">Jackets & Coats</a></li>
+								<li class="sub-menu-lvl-2__item"><a class="sub-menu-lvl-2__link" href="#">Cardigans</a></li>
+								<li class="sub-menu-lvl-2__item"><a class="sub-menu-lvl-2__link" href="#">View more basics</a></li>
 							</ul>
-							<ul><span><a href="#">Basics</a></span>
-								<li><a href="#">Polo Shirts</a></li>
-								<li><a href="#">Shirts</a></li>
-								<li><a href="#">Shorts</a></li>
-								<li><a href="#">Skirts</a></li>
-								<li><a href="#">Tops</a></li>
-								<li><a href="#">T-Shirts</a></li>
-								<li><a href="#">View more basics</a></li>
+							<ul class="sub-menu-lvl-1__item">
+								<span class="sub-menu-lvl-1__head">
+									<a class="sub-menu-lvl-1__link" href="#">Basics</a>
+								</span>
+								<!-- list -->
+								<li class="sub-menu-lvl-2__item"><a class="sub-menu-lvl-2__link" href="#">Polo Shirts</a></li>
+								<li class="sub-menu-lvl-2__item"><a class="sub-menu-lvl-2__link" href="#">Shirts</a></li>
+								<li class="sub-menu-lvl-2__item"><a class="sub-menu-lvl-2__link" href="#">Shorts</a></li>
+								<li class="sub-menu-lvl-2__item"><a class="sub-menu-lvl-2__link" href="#">Skirts</a></li>
+								<li class="sub-menu-lvl-2__item"><a class="sub-menu-lvl-2__link" href="#">Tops</a></li>
+								<li class="sub-menu-lvl-2__item"><a class="sub-menu-lvl-2__link" href="#">T-Shirts</a></li>
+								<li class="sub-menu-lvl-2__item"><a class="sub-menu-lvl-2__link" href="#">View more basics</a></li>
 							</ul>
-							<ul><span><a href="#">Shoes</a></span>
-								<li><a href="#">Sneakers</a></li>
-								<li><a href="#">Socks</a></li>
-								<li><a href="#">Shoes</a></li>
-								<li><a href="#">Flipflops & Sandals</a></li>
-								<li><a href="#">Pumps</a></li>
-								<li><a href="#">Boots</a></li>
-								<li><a href="#">Ballerinas</a></li>
-								<li><a href="#">View more basics</a></li>
+							<ul class="sub-menu__item-lvl-1">
+								<span class="sub-menu-lvl-1__head">
+									<a href="#">Shoes</a>
+								</span>
+								<!-- list -->
+								<li class="sub-menu-lvl-2__item"><a class="sub-menu-lvl-2__link" href="#">Sneakers</a></li>
+								<li class="sub-menu-lvl-2__item"><a class="sub-menu-lvl-2__link" href="#">Socks</a></li>
+								<li class="sub-menu-lvl-2__item"><a class="sub-menu-lvl-2__link" href="#">Shoes</a></li>
+								<li class="sub-menu-lvl-2__item"><a class="sub-menu-lvl-2__link" href="#">Flipflops & Sandals</a></li>
+								<li class="sub-menu-lvl-2__item"><a class="sub-menu-lvl-2__link" href="#">Pumps</a></li>
+								<li class="sub-menu-lvl-2__item"><a class="sub-menu-lvl-2__link" href="#">Boots</a></li>
+								<li class="sub-menu-lvl-2__item"><a class="sub-menu-lvl-2__link" href="#">Ballerinas</a></li>
+								<li class="sub-menu-lvl-2__item"><a class="sub-menu-lvl-2__link" href="#">View more basics</a></li>
 							</ul>
 						</div>
+						<!-- SUB-MENU end -->
 					</li>
-					<li><a href="#">allround bikes</a></li>
-					<li><a href="#">sporting bikes</a></li>
-					<li><a href="#">brands</a></li>
-					<li><a href="#">about us</a></li>
-					<li><a href="#">contact</a></li>
+
+					<li class="main-menu__item"><a href="#">allround bikes</a></li>
+					<li class="main-menu__item"><a href="#">sporting bikes</a></li>
+					<li class="main-menu__item"><a href="#">brands</a></li>
+					<li class="main-menu__item"><a href="#">about us</a></li>
+					<li class="main-menu__item"><a href="#">contact</a></li>
 				</ul>
+
 			</nav>
 		</div>
 
