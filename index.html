@@ -10,6 +10,7 @@
 	<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> -->
 
 	<link rel="stylesheet" href="styles/additional.css">
+	
 	<!-- Normalize CSS -->
 	<link rel="stylesheet" href="styles/normalize.css">
 	<!-- Mobile -->
@@ -21,43 +22,68 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<header>
+	<header class="header">
 		
-		<div class="header-top mobile-item">
-			<section class="contact-info">If you have any questions, call us (<a href="tel:0102436000">010 2436000</a>) of visit our <a href="#">customer service page</a></section>
-			<ul class="action">
-				<li class="language action-opener hover-opener collapsed">
-					<div class="list-expander">
-						<img src="" alt="language-icon" class="language-icon" width="16" height="11"><span>Language: English</span>
+		<section class="header__top">
+
+			<div class="contact-info">If you have any questions, call us (<a href="tel:0102436000">010 2436000</a>) of visit our <a href="#">customer service page</a></div>
+
+			<div class="action-menu">
+				
+				<div class="action-menu__item
+							action-menu__dropdown
+							language-switcher">
+
+					<div class="sub-menu__expander">
+						<img src="" alt="en" class="language-switcher__img"><span>Language: English</span>	
 					</div>
-					<ul class="sub-action left">
-						<li><a href="#"><img src="" alt="gb" class="language-icon" width="16" height="11">English</a></li>
-						<li><a href="#"><img src="" alt="nl" class="language-icon" width="16" height="11">Nederlands</a></li>
-						<li><a href="#"><img src="" alt="de" class="language-icon" width="16" height="11">Deutsch</a></li>
-						<li><a href="#"><img src="" alt="fr" class="language-icon" width="16" height="11">Français</a></li>
+
+					<ul class="sub-menu">
+						<li class="sub-menu__item"><a href="#"><img src="" alt="gb" class="language-switcher__img">English</a></li>
+						<li class="sub-menu__item"><a href="#"><img src="" alt="nl" class="language-switcher__img">Nederlands</a></li>
+						<li class="sub-menu__item"><a href="#"><img src="" alt="de" class="language-switcher__img">Deutsch</a></li>
+						<li class="sub-menu__item"><a href="#"><img src="" alt="fr" class="language-switcher__img">Français</a></li>
 					</ul>
-				</li>
-				<li class="hyp"><a href="#">Customer service</a></li>
-				<li class="hyp"><a href="#">Login</a></li>
-				<li class="my-account action-opener hover-opener collapsed">
-					<div class="list-expander">
+
+				</div>
+
+				<div class="action-menu__item
+							hyperlink">
+					<a href="#">Customer service</a>
+				</div>
+
+				<div class="action-menu__item
+							hyperlink">
+					<a href="#">Login</a>
+				</div>
+				
+				<div class="action-menu__item
+							action-menu__dropdown
+							my-account">
+					
+					<div class="sub-menu__expander">
 						<i class="icon"></i><span>Account</span>
 					</div>
-					<ul class="sub-action right">
-						<li><a href="#">Welcome Jouke de Vries</a></li>
-						<li><a href="#">Register</a></li>
-						<li><a href="#">My account</a></li>
-						<li><a href="#">My wishlist</a></li>
-						<li><a href="#">Customer service</a></li>
-						<li><a href="#">Quick order</a></li>
-						<li><a href="#">Represent customer</a></li>
-						<li><a href="#">Logout</a></li>
-					</ul>		
-				</li>
-			</ul>
-			
 
-		</div>
+					<ul class="sub-menu">
+						<li class="sub-menu__item"><a href="#">Welcome Jouke de Vries</a></li>
+						<li class="sub-menu__item"><a href="#">Register</a></li>
+						<li class="sub-menu__item"><a href="#">My account</a></li>
+						<li class="sub-menu__item"><a href="#">My wishlist</a></li>
+						<li class="sub-menu__item"><a href="#">Customer service</a></li>
+						<li class="sub-menu__item"><a href="#">Quick order</a></li>
+						<li class="sub-menu__item"><a href="#">Represent customer</a></li>
+						<li class="sub-menu__item"><a href="#">Logout</a></li>
+					</ul>		
+				</div>
+
+			</div>
+
+		</section>
+
+
+
+
 
 		<div class="header-middle">
 			<div class="menu-opener"></div>
@@ -71,6 +97,12 @@
 			</div>
 			<div class="shopping-cart"></div>
 		</div>
+
+
+
+
+
+
 
 		<div class="header-bottom mobile-item">
 			<nav>
@@ -120,6 +152,41 @@
 
 	</header>
 	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	<!-- ABOVE -->
 	<section class="above">
 		<div class="center">
@@ -135,11 +202,12 @@
 		</div>
 	</section>
 
+	<div class="filter-opener list-expander"><span>Filters</span></div>
+
 	<!-- Main content -->
 	<main>
 		<!-- LEFT -->
 			<aside class="left-column">
-				<div class="filter-opener list-expander"><span>Filters</span></div>
 				<!-- <div class="filter-opener"><span>filters</span></div> -->
 				<div class="active-filters">
 					<h3>Chosen Filters</h3>
