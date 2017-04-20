@@ -43,6 +43,8 @@ html, body {
 	display: none;
 }
 
+/*.dropdown-menu { display: none; }*/
+
 .dropdown-menu__expander,
 .dropdown-menu__item {
 	height: 40px;
@@ -127,6 +129,12 @@ html, body {
 	text-transform: uppercase;
 }
 
+.main-menu__link {
+	text-decoration: none;
+}
+
+/*.sub-menu { display: none; }*/
+
 .sub-menu-lvl-1__head,
 .sub-menu-lvl-2__item {
 	font-family: 'Oxygen', sans-serif;
@@ -134,159 +142,16 @@ html, body {
 	line-height: 24px;
 }
 
+.sub-menu-lvl-1__head::before,
+.sub-menu-lvl-2__item::before {
+	content: "› ";
+}
+
 .sub-menu-lvl-2__item {
 	text-transform: capitalize;
 }
 
-/*OLD-OLD-OLD-OLD-OLD-OLD-OLD-OLD*/
-				.header-top {
-					display: flex;
-					flex-direction: column;
-					display: none;
-					order: 2;
-				}
-
-				.header-top .contact-info {
-					display: none;
-				}
-
-				.header-top .action>li { 
-					min-height: 40px;
-					line-height: 40px;
-					font-size: 13px;
-					background: #ccc;
-				}
-
-				.header-top .action .language-icon {
-					padding: 0 15px;
-				}
-
-				.header-top .my-account {
-					position: relative;
-				}
-
-				.header-top .my-account i {
-					display: inline-block;
-					margin-left: 15px;
-					margin-right: 13px;
-					margin-bottom: -4px;
-					width: 18px;
-					height: 18px;
-					background: #000;
-				}
-
-				.header-top .action li .sub-action {
-					display: none;
-					background-color: #fff;
-				}
-
-				.header-top .my-account ul li {
-					padding-left: 15px;
-				}
-
-				.header-top .action .hyp { display: none; }
-
-				.header-middle {
-					display: inherit;
-					justify-content: space-between;
-					align-items: center;
-					flex-wrap: wrap;
-					order: 1;
-				}
-					
-				.header-middle .menu-opener {
-					width: 62px;
-					height: 62px;
-					background: #ccc;
-				}
-
-				.header-middle .page-logo {
-					order: 2;
-				}
-
-				.header-middle .search-box {
-					order: 4;
-					display: none;
-					width: 100%;
-					padding: 20px 15px;
-				}
-
-				.header-middle .input-wrapper {
-					height: 40px;
-					position: relative;
-				}
-
-				.header-middle .search-box input {
-					width: 100%;
-					height: 100%;
-					padding: 0 15px;
-					outline: none;
-					box-sizing: border-box;
-					font-family: inherit;
-					font-style: italic;
-					font-size: 13px;
-				}
-
-				.header-middle .search-box button {
-					position: absolute;
-					width: 55px;
-					top: 0;
-					right: 0;
-					bottom: 0;
-				}
-
-				.header-middle .shopping-cart {
-					order: 3;
-					width: 62px;
-					height: 62px;
-					background: #ccc;
-				}
-
-				.header-bottom {
-					display: none;
-					order: 3;
-					padding: 0 15px;
-				}
-
-				.header-bottom .main-menu>li {
-					min-height: 40px;
-				}
-
-				.header-bottom .main-menu>li>a {
-					font-family: 'Pathway Gothic One', sans-serif;
-					font-size: 20px;
-					line-height: 40px;
-					text-decoration: none;
-					text-transform: uppercase;
-				}
-
-				.header-bottom .main-menu .extended>a {
-					display: block;
-				}
-
-				.header-bottom .main-menu .sub-category {
-					display: none;
-					padding: 10px;
-				}
-
-				.header-bottom .main-menu .sub-category ul {
-					margin-bottom: 10px;
-				}
-
-				.header-bottom .main-menu .sub-category li::before {
-					content: "› ";
-				}
-
-				.header-bottom .main-menu .sub-category li a {
-					font-size: 13px;
-					line-height: 30px
-				}
-
-				.header-bottom .main-menu .sub-category span {
-					font-family: 'Pathway Gothic One', sans-serif;
-					font-size: 18px;
-					text-transform: uppercase;
-				}
+.above-content { display: none; }
 
 /* HEADER end */
 
@@ -296,25 +161,7 @@ html, body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.above {
-	display: none;
-}
+/* MAIN start */
 
 .filter-opener {
 	height: 57px;
@@ -546,6 +393,18 @@ main .right-column .recently-viewed h3 {
 	padding: 0;
 }
 
+/* MAIN end */
+
+
+
+
+
+
+
+
+
+
+/* FOOTER start */
 footer h3 {
 	font-family: 'Pathway Gothic One', sans-serif;
 	font-size: 18px;
@@ -626,3 +485,5 @@ footer .footer-bottom .footer-links ul {
 footer .footer-bottom .footer-links ul li {
 	margin-right: 10px;
 }
+
+/* FOOTER end */

@@ -25,8 +25,8 @@
 	<header class="header">
 		
 		<section class="header__top">
-			<div class="contact-info">If you have any questions, call us (<a href="tel:0102436000">010 2436000</a>) of visit our <a href="#">customer service page</a></div>
-			<div class="user-menu">
+			<section class="contact-info">If you have any questions, call us (<a href="tel:0102436000">010 2436000</a>) of visit our <a href="#">customer service page</a></section>
+			<section class="user-menu">
 				<!-- Dropdown menu -->
 				<div class="user-menu__dropdown language-switcher">
 					<div class="dropdown-menu__expander">
@@ -60,9 +60,9 @@
 						<li class="dropdown-menu__item">
 							<span class="my-account__item">Welcome <strong>Jouke de Vries</strong></span>
 						</li>
-						<li class="dropdown-menu__item">
+						<!-- <li class="dropdown-menu__item">
 							<a href="#" class="my-account__item link">Register</a>
-						</li>
+						</li> -->
 						<li class="dropdown-menu__item">
 							<a href="#" class="my-account__item link">My account</a>
 						</li>
@@ -86,11 +86,10 @@
 						</li>
 					</ul>
 				</div>
-			</div>
+			</section>
 		</section>
 
 		<section class="header__middle">
-			
 			<div class="main-menu-opener"></div>
 			
 			<a class="page-logo" href="#"><img src="images/sana-logo.png" alt="page-logo-image" class="page-logo__image"></a>
@@ -103,7 +102,6 @@
 			</form>
 			
 			<div class="shopping-cart"></div>
-
 		</section>
 
 
@@ -111,9 +109,9 @@
 			<nav class="main-menu__wrapper">
 
 				<ul class="main-menu">
-					<li class="main-menu__item"><a href="#">new</a></li>
-					<li class="main-menu__item"><a href="#">city bikes</a></li>
-					<li class="main-menu__item sub-menu__expander"><a href="#">touring bikes</a>
+					<li class="main-menu__item"><a class="main-menu__link" href="#">new</a></li>
+					<li class="main-menu__item"><a class="main-menu__link" href="#">city bikes</a></li>
+					<li class="main-menu__item sub-menu__expander"><a class="main-menu__link" href="#">touring bikes</a>
 						<!-- SUB-MENU start -->
 						<div class="sub-menu">
 							<ul class="sub-menu-lvl-1__item">
@@ -158,60 +156,49 @@
 						</div>
 						<!-- SUB-MENU end -->
 					</li>
-
-					<li class="main-menu__item"><a href="#">allround bikes</a></li>
-					<li class="main-menu__item"><a href="#">sporting bikes</a></li>
-					<li class="main-menu__item"><a href="#">brands</a></li>
-					<li class="main-menu__item"><a href="#">about us</a></li>
-					<li class="main-menu__item"><a href="#">contact</a></li>
+					<li class="main-menu__item"><a class="main-menu__link" href="#">allround bikes</a></li>
+					<li class="main-menu__item"><a class="main-menu__link" href="#">sporting bikes</a></li>
+					<li class="main-menu__item"><a class="main-menu__link" href="#">brands</a></li>
+					<li class="main-menu__item"><a class="main-menu__link" href="#">about us</a></li>
+					<li class="main-menu__item"><a class="main-menu__link" href="#">contact</a></li>
 				</ul>
 
 			</nav>
 		</div>
-
 	</header>
-	
-
-
-
-
-
-
-
-
-
-
 
 	<!-- ABOVE -->
-	<section class="above">
+	<section class="above-content">
 		<div class="center">
 			<div class="breadcrumb">
-				<a href="#">Home</a>
-				<a href="#">New</a>
+				<a class="breadcrumb__link" href="#">home</a>
+				<a class="breadcrumb__link" href="#">new</a>
 			</div>
-			<div class="heading">
-				<h1>bicycles new</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque convallis bibendum odio at mollis. Donec in sodales libero. Sed molestie odio ut neque sollicitudin lobo... <a href="#">Read more</a></p>
+			<div class="above-content__text-wrapper">
+				<h1 class="above-content__header">bicycles new</h1>
+				<p class="above-content__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque convallis bibendum odio at mollis. Donec in sodales libero. Sed molestie odio ut neque sollicitudin lobo... <a href="#">Read more</a></p>
 				<!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque convallis bibendum odio at mollis. Donec in sodales libero. Sed molestie odio ut neque sollicitudin lobortis. Aenean at placerat libero. Fusce scelerisque tortor a ante pellentesque, et facilisis orci suscipit. Etiam semper mauris non erat porttitor, quis malesuada quam faucibus. Fusce placerat lorem vitae justo convallis, sit amet </p> -->
 			</div>
 		</div>
 	</section>
 
-	<div class="filter-opener list-expander"><span>Filters</span></div>
+	<!-- Filter opener -->
+	<section class="filter-opener"><span class="filter-opener__text">Filters</span></section>
 
 	<!-- Main content -->
-	<main>
+	<main class="main">
 		<!-- LEFT -->
 			<aside class="left-column">
-				<!-- <div class="filter-opener"><span>filters</span></div> -->
+				
 				<div class="active-filters">
-					<h3>Chosen Filters</h3>
-					<ul>
-						<li><a href="#">X</a>Blauw</li>
-						<li><a href="#">X</a>Batavus</li>
+					<h3 class="active-filters__title">Chosen Filters</h3>
+					<ul class="active-filters__list">
+						<li class="active-filters__item"><a class="active-filters__remove-link" href="#">X</a>Blauw</li>
+						<li class="active-filters__item"><a class="active-filters__remove-link" href="#">X</a>Batavus</li>
 					</ul>
-					<div class="hyp"><a href="#">Remove all filters</a></div>
+					<div class="link-action"><a href="#">Remove all filters</a></div>
 				</div>
+
 				<div class="filter-box">
 					<h3 class="list-expander">Type Fiets</h3>
 					<ul>
