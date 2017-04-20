@@ -143,7 +143,7 @@ html, body {
 }
 
 .sub-menu-lvl-1__head::before,
-.sub-menu-lvl-2__item::before {
+.sub-menu-lvl-2__item:not(:last-child)::before {
 	content: "› ";
 }
 
@@ -169,18 +169,18 @@ html, body {
 	background: #ccc;
 }
 
-.filter-opener span {
+.filter-opener__text {
 	position: relative;
 	font-family: 'Pathway Gothic One', sans-serif;
-	font-size: 22px;
+	font-size: 1.833333333333333rem; /* 22px / 12px */
 	line-height: 57px;
-	padding-right: 23px;
+	padding-right: 1.916666666666667rem; /* 23px / 12px */
 	color: blue;
 	user-select: none;
 	text-transform: uppercase;
 }
 
-.filter-opener span::after {
+.filter-opener__text::after {
 	content: "";
 	display: block;
 	position: absolute;
@@ -191,28 +191,23 @@ html, body {
 	background: #000;
 }
 
-main {
-	display: flex;
-	flex-direction: column;
-}
-main .left-column {
-	display: none;
-	box-sizing: border-box;
-	padding: 0 15px;
+.main {}
+
+.left-column {
+	margin: 0 1.25rem;
 }
 
-main .left-column .active-filters,
-main .left-column .filter-box {
+.active-filters,
+.filters-block {
 	margin-bottom: 37px;
 }
 
-main .left-column .filter-box:last-child {
+.filters-block:last-child {
 	margin-bottom: 5px;
 }
 
-main .left-column .active-filters h3,
-main .left-column .filter-box h3 {
-	height: 25px;
+.active-filters__title,
+.filters-list__expander {
 	margin: 0;
 	padding: 0;
 	font-family: 'Pathway Gothic One', sans-serif;
@@ -222,34 +217,34 @@ main .left-column .filter-box h3 {
 	font-weight: normal;
 }
 
-main .left-column .active-filters ul li,
-main .left-column .filter-box ul li {
+.active-filters__item,
+.filters-list__item {
 	height: 24px;
 }		
 
-main .left-column .active-filters ul a,
-main .left-column .active-filters a  {
-	font-size: 13px;
+.active-filters__item,
+.link-action,
+.filters-list__label {
+	font-size: 1.083333333333333rem; /* 13px / 12px */
 	line-height: 24px;
 }
 
-main .left-column .active-filters ul a {
-	padding-right: 21px;
+.active-filters__remove-link,
+.filters-list__checkbox {
+	margin-right: 20px;
 }
 
-main .left-column .hyp {
-	font-weight: bold;
-}
-
-main .left-column .filter-box ul li label {
-	font-size: 13px;
-	line-height: 24px;
+.filters-list__label {
 	user-select: none;
 }
 
-main .left-column .filter-box ul li input {
-	margin-right: 10px;
+.link-action {
+	font-weight: 700;
 }
+
+/*main .left-column .filter-box ul li input {
+	margin-right: 10px;
+}*/
 
 main .right-column {
 	padding: 12px 15px 0px;
