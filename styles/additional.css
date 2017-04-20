@@ -1,15 +1,23 @@
-.above {
-	background-color: #ccc;
+/*.header__top {
+	box-shadow: 0 0 2px 0 #f00;
 }
 
-.header-bottom {
-	background-color: #ddd;
+.header__middle {
+	box-shadow: 0 0 2px 0 #0f0;
 }
 
-main .right .product-grid .product:hover {
-	box-shadow: 0 0 1px 0 #000;	
+.header__bottom {
+	box-shadow: 0 0 2px 0 #00f;
+}*/
+
+.main-menu-opener {
+	background: #f11;
 }
 
-main .left .filter-opener {
-	background-color: #ccc;
+.shopping-cart {
+	background: #11f;
+}
+
+.sub-menu {
+	/*display: none;*/
 }

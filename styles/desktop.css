@@ -9,6 +9,8 @@
 		margin: 0 auto;
 	}
 
+	/* HEADER start */
+
 	.header-top {
 		flex-direction: row;
 		justify-content: space-between;
@@ -113,6 +115,24 @@
 	}
 
 	.header-bottom .main-menu .extended:hover  .sub-category { display: none; }
+
+	/* HEADER end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
 
 	.above .center {
 		padding: 20px 10px 30px;

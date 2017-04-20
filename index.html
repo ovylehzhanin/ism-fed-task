@@ -25,64 +25,69 @@
 	<header class="header">
 		
 		<section class="header__top">
-
 			<div class="contact-info">If you have any questions, call us (<a href="tel:0102436000">010 2436000</a>) of visit our <a href="#">customer service page</a></div>
-
-			<div class="action-menu">
-				
-				<div class="action-menu__item
-							language-switcher">
-
-					<div class="action-sub-menu__expander">
-						<img src="" alt="en" class="language-switcher__img"><span>Language: English</span>	
+			<div class="user-menu">
+				<!-- Dropdown menu -->
+				<div class="user-menu__dropdown language-switcher">
+					<div class="dropdown-menu__expander">
+						<img src="" alt="en" class="language-switcher__image"><span class="language-switcher__text">Language: English</span>
 					</div>
-
-					<ul class="action-sub-menu">
-						<li class="action-sub-menu__item"><a href="#"><img src="" alt="gb" class="language-switcher__img">English</a></li>
-						<li class="action-sub-menu__item"><a href="#"><img src="" alt="nl" class="language-switcher__img">Nederlands</a></li>
-						<li class="action-sub-menu__item"><a href="#"><img src="" alt="de" class="language-switcher__img">Deutsch</a></li>
-						<li class="action-sub-menu__item"><a href="#"><img src="" alt="fr" class="language-switcher__img">Français</a></li>
+					<ul class="dropdown-menu">
+						<li class="dropdown-menu__item">
+							<a href="#" class="language-switcher__link"><img src="" alt="en" class="language-switcher__image"><span class="language-switcher__text">English</span></a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="language-switcher__link"><img src="" alt="nl" class="language-switcher__image"><span class="language-switcher__text">Nederlands</span></a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="language-switcher__link"><img src="" alt="de" class="language-switcher__image"><span class="language-switcher__text">Deutsch</span></a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="language-switcher__link"><img src="" alt="fr" class="language-switcher__image"><span class="language-switcher__text">Français</span></a>
+						</li>
 					</ul>
-
 				</div>
-
-				<div class="action-menu__item
-							hyperlink">
-					<a href="#">Customer service</a>
-				</div>
-
-				<div class="action-menu__item
-							hyperlink">
-					<a href="#">Login</a>
-				</div>
-				
-				<div class="action-menu__item
-							my-account">
-					
-					<div class="sub-menu__expander">
-						<i class="sub-menu__expander__icon"></i>
-						<span>Account</span>
+				<!-- Link -->
+				<div class="user-menu__link">Customer service</div>
+				<!-- Link -->
+				<div class="user-menu__link">Login</div>
+				<!-- Dropdown menu -->
+				<div class="user-menu__dropdown my-account">
+					<div class="dropdown-menu__expander">
+						<span class="my-account__item icon">Account</span>
 					</div>
-
-					<ul class="action-sub-menu">
-						<li class="action-sub-menu__item"><a href="#">Welcome Jouke de Vries</a></li>
-						<li class="action-sub-menu__item"><a href="#">Register</a></li>
-						<li class="action-sub-menu__item"><a href="#">My account</a></li>
-						<li class="action-sub-menu__item"><a href="#">My wishlist</a></li>
-						<li class="action-sub-menu__item"><a href="#">Customer service</a></li>
-						<li class="action-sub-menu__item"><a href="#">Quick order</a></li>
-						<li class="action-sub-menu__item"><a href="#">Represent customer</a></li>
-						<li class="action-sub-menu__item"><a href="#">Logout</a></li>
-					</ul>		
+					<ul class="dropdown-menu">
+						<li class="dropdown-menu__item">
+							<span class="my-account__item">Welcome <strong>Jouke de Vries</strong></span>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="my-account__item link">Register</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="my-account__item link">My account</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="my-account__item link">My wishlist</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="my-account__item link">Customer service</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="my-account__item link">Customer service</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="my-account__item link">Quick order</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="my-account__item link">Represent customer</a>
+						</li>
+						<li class="dropdown-menu__item">
+							<a href="#" class="my-account__item link">Logout</a>
+						</li>
+					</ul>
 				</div>
-
 			</div>
-
 		</section>
-
-
-
-
 
 		<section class="header__middle">
 			
@@ -91,8 +96,8 @@
 			<a class="page-logo" href="#"><img src="images/sana-logo.png" alt="page-logo-image" class="page-logo__image"></a>
 			
 			<form class="search-form">
-					<div class="search-form__wrapper">
-						<input class="search-form__input" type="search" placeholder="Product name or item number...">
+					<div class="search-form__elements-wrapper">
+						<input class="search-form__text-input" type="search" placeholder="Product name or item number...">
 						<button class="search-form__button"></button>
 					</div>
 			</form>
@@ -103,7 +108,7 @@
 
 
 		<div class="header__bottom">
-			<nav>
+			<nav class="main-menu__wrapper">
 
 				<ul class="main-menu">
 					<li class="main-menu__item"><a href="#">new</a></li>
@@ -121,7 +126,7 @@
 								<li class="sub-menu-lvl-2__item"><a class="sub-menu-lvl-2__link" href="#">Jeans</a></li>
 								<li class="sub-menu-lvl-2__item"><a class="sub-menu-lvl-2__link" href="#">Jackets & Coats</a></li>
 								<li class="sub-menu-lvl-2__item"><a class="sub-menu-lvl-2__link" href="#">Cardigans</a></li>
-								<li class="sub-menu-lvl-2__item"><a class="sub-menu-lvl-2__link" href="#">View more basics</a></li>
+								<li class="sub-menu-lvl-2__item view-more-link"><a class="sub-menu-lvl-2__link view-more" href="#">View more...</a></li>
 							</ul>
 							<ul class="sub-menu-lvl-1__item">
 								<span class="sub-menu-lvl-1__head">
@@ -134,7 +139,7 @@
 								<li class="sub-menu-lvl-2__item"><a class="sub-menu-lvl-2__link" href="#">Skirts</a></li>
 								<li class="sub-menu-lvl-2__item"><a class="sub-menu-lvl-2__link" href="#">Tops</a></li>
 								<li class="sub-menu-lvl-2__item"><a class="sub-menu-lvl-2__link" href="#">T-Shirts</a></li>
-								<li class="sub-menu-lvl-2__item"><a class="sub-menu-lvl-2__link" href="#">View more basics</a></li>
+								<li class="sub-menu-lvl-2__item"><a class="sub-menu-lvl-2__link view-more" href="#">View more...</a></li>
 							</ul>
 							<ul class="sub-menu__item-lvl-1">
 								<span class="sub-menu-lvl-1__head">
@@ -148,7 +153,7 @@
 								<li class="sub-menu-lvl-2__item"><a class="sub-menu-lvl-2__link" href="#">Pumps</a></li>
 								<li class="sub-menu-lvl-2__item"><a class="sub-menu-lvl-2__link" href="#">Boots</a></li>
 								<li class="sub-menu-lvl-2__item"><a class="sub-menu-lvl-2__link" href="#">Ballerinas</a></li>
-								<li class="sub-menu-lvl-2__item"><a class="sub-menu-lvl-2__link" href="#">View more basics</a></li>
+								<li class="sub-menu-lvl-2__item"><a class="sub-menu-lvl-2__link view-more" href="#">View more...</a></li>
 							</ul>
 						</div>
 						<!-- SUB-MENU end -->
@@ -166,30 +171,6 @@
 
 	</header>
 	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
