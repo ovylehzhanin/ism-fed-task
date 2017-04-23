@@ -54,7 +54,8 @@
 				<!-- Dropdown menu -->
 				<div class="user-menu__dropdown my-account">
 					<div class="dropdown-menu__expander">
-						<span class="my-account__item icon">Account</span>
+						<i class="my-account__icon"></i>
+						<span class="my-account__text">Account</span>
 					</div>
 					<ul class="dropdown-menu">
 						<li class="dropdown-menu__item">
@@ -92,7 +93,7 @@
 		<section class="header__middle">
 			<div class="main-menu-opener"></div>
 			
-			<a class="page-logo" href="#"><img src="images/sana-logo.png" alt="page-logo-image" class="page-logo__image"></a>
+			<a class="page-logo" href="#"><img src="images/sana-logo-119_32.png" alt="page-logo-image" class="page-logo__image"></a>
 			
 			<form class="search-form">
 					<div class="search-form__elements-wrapper">
@@ -124,7 +125,7 @@
 								<li class="sub-menu-lvl-2__item"><a class="sub-menu-lvl-2__link" href="#">Jeans</a></li>
 								<li class="sub-menu-lvl-2__item"><a class="sub-menu-lvl-2__link" href="#">Jackets & Coats</a></li>
 								<li class="sub-menu-lvl-2__item"><a class="sub-menu-lvl-2__link" href="#">Cardigans</a></li>
-								<li class="sub-menu-lvl-2__item view-more-link"><a class="sub-menu-lvl-2__link view-more" href="#">View more...</a></li>
+								<li class="sub-menu-lvl-2__item view-more"><a class="sub-menu-lvl-2__link" href="#">View more...</a></li>
 							</ul>
 							<ul class="sub-menu-lvl-1__item">
 								<span class="sub-menu-lvl-1__head">
@@ -139,9 +140,9 @@
 								<li class="sub-menu-lvl-2__item"><a class="sub-menu-lvl-2__link" href="#">T-Shirts</a></li>
 								<li class="sub-menu-lvl-2__item"><a class="sub-menu-lvl-2__link view-more" href="#">View more...</a></li>
 							</ul>
-							<ul class="sub-menu__item-lvl-1">
+							<ul class="sub-menu-lvl-1__item">
 								<span class="sub-menu-lvl-1__head">
-									<a href="#">Shoes</a>
+									<a class="sub-menu-lvl-1__link" href="#">Shoes</a>
 								</span>
 								<!-- list -->
 								<li class="sub-menu-lvl-2__item"><a class="sub-menu-lvl-2__link" href="#">Sneakers</a></li>
@@ -168,8 +169,8 @@
 	</header>
 
 	<!-- ABOVE -->
-	<section class="above-content">
-		<div class="center">
+	<section class="above-content__wrapper">
+		<div class="above-content">
 			<div class="breadcrumb">
 				<a class="breadcrumb__link" href="#">home</a>
 				<a class="breadcrumb__link" href="#">new</a>
@@ -177,13 +178,13 @@
 			<div class="above-content__text-wrapper">
 				<h1 class="above-content__header">bicycles new</h1>
 				<p class="above-content__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque convallis bibendum odio at mollis. Donec in sodales libero. Sed molestie odio ut neque sollicitudin lobo... <a href="#">Read more</a></p>
-				<!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque convallis bibendum odio at mollis. Donec in sodales libero. Sed molestie odio ut neque sollicitudin lobortis. Aenean at placerat libero. Fusce scelerisque tortor a ante pellentesque, et facilisis orci suscipit. Etiam semper mauris non erat porttitor, quis malesuada quam faucibus. Fusce placerat lorem vitae justo convallis, sit amet </p> -->
+				<p class="above-content__paragraph-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque convallis bibendum odio at mollis. Donec in sodales libero. Sed molestie odio ut neque sollicitudin lobortis. Aenean at placerat libero. Fusce scelerisque tortor a ante pellentesque, et facilisis orci suscipit. Etiam semper mauris non erat porttitor, quis malesuada quam faucibus. Fusce placerat lorem vitae justo convallis, sit amet </p>
 			</div>
 		</div>
 	</section>
 
 	<!-- Filter opener -->
-	<section class="filter-opener"><span class="filter-opener__text">Filters</span></section>
+	<section class="filters-opener"><span class="filters-opener__text">Filters</span></section>
 
 	<!-- Main content -->
 	<main class="main">
@@ -217,7 +218,7 @@
 				</section>
 
 				<section class="filters-block">
-					<h3 class="list-expander">Gender</h3>
+					<h3 class="filters-list__expander">Gender</h3>
 					<!-- Select -->
 					<select name="" id="">
 						<option value="">Male</option>
@@ -249,7 +250,7 @@
 						<div class="range-inputs">
 							<input type="text">
 							<input type="text">
-							<button>Go</button>
+							<button>Ok</button>
 						</div>
 					</form>
 				</section>
@@ -274,121 +275,324 @@
 
 			<!-- RIGHT -->
 			<section class="right-column">
+
 				<section class="view-settings">
-					<span>View:</span><a class="mode list-mode" href="#"></a><a class="mode grid-mode" href="#"></a>
+					<div class="products-counter"><span>130</span> products in selection</div>
+					<div class="view-mode">
+						<span class="view-mode__span">View:</span>
+						<a href="#" class="view-mode__switcher list"></a>
+						<a href="#" class="view-mode__switcher grid"></a>
+					</div>
+					<form action="" class="sorting">
+						<label for="sorting-mode" class="sorting__label"></label>
+						<select name="sorting-mode" id="sorting-mode">
+							<option value="price-asc">Price - ascending</option>
+							<option value="price-desc">Price - descending</option>
+						</select>
+					</form>
 				</section>
 
 				<section class="product-grid">
 					
 					<div class="product">
-						<img src="images/product-image.jpg" alt="product-image" width="214" height="211">
-						<h3 class="product-title">Mongoose Agatz Elite Black</h3>
-						<p class="product-attributes">Rim | Mongoose | 28"</p>
-						<p class="product-stock">50 in stock</p>
-						<p class="product-price">€ 686,25</p>
-						<button class="add-to-basket">Add to basket</button>
+						<div class="product__image-wrapper">
+							<img class="product__image" src="images/product-image.jpg" alt="product__image">	
+						</div>
+						<p class="product__title"><strong>Mongoose Agatz Elite Black</strong></p>
+						<p class="product__attributes">Rim | Mongoose | 28"</p>
+						<p class="product__stock-counter"><strong>50 in stock</strong></p>
+						<div class="product__price">
+								<span class="product__action-price">€ 686,25</span>
+								<span class="product__sales-price">€ 686,25</span>
+						</div>
+						<!-- <p class="product__price">€ 686,25</p> -->
+						<button class="add-button">Add to basket</button>
 					</div>
 
+					<div class="product">
+						<div class="product__image-wrapper">
+							<img class="product__image" src="images/product-image.jpg" alt="product__image">	
+						</div>
+						<p class="product__title"><strong>Mongoose Agatz Elite Black</strong></p>
+						<p class="product__attributes">Rim | Mongoose | 28"</p>
+						<p class="product__stock-counter"><strong>50 in stock</strong></p>
+						<div class="product__price">
+								<span class="product__action-price">€ 686,25</span>
+								<span class="product__sales-price">€ 686,25</span>
+						</div>
+						<!-- <p class="product__price">€ 686,25</p> -->
+						<button class="add-button">Add to basket</button>
+					</div>
+
+					<div class="product">
+						<div class="product__image-wrapper">
+							<img class="product__image" src="images/product-image.jpg" alt="product__image">	
+						</div>
+						<p class="product__title"><strong>Mongoose Agatz Elite Black</strong></p>
+						<p class="product__attributes">Rim | Mongoose | 28"</p>
+						<p class="product__stock-counter"><strong>50 in stock</strong></p>
+						<div class="product__price">
+								<span class="product__action-price">€ 686,25</span>
+								<span class="product__sales-price">€ 686,25</span>
+						</div>
+						<!-- <p class="product__price">€ 686,25</p> -->
+						<button class="add-button">Add to basket</button>
+					</div>
+
+					<div class="product">
+						<div class="product__image-wrapper">
+							<img class="product__image" src="images/product-image.jpg" alt="product__image">	
+						</div>
+						<p class="product__title"><strong>Mongoose Agatz Elite Black</strong></p>
+						<p class="product__attributes">Rim | Mongoose | 28"</p>
+						<p class="product__stock-counter"><strong>50 in stock</strong></p>
+						<div class="product__price">
+								<span class="product__action-price">€ 686,25</span>
+								<span class="product__sales-price">€ 686,25</span>
+						</div>
+						<!-- <p class="product__price">€ 686,25</p> -->
+						<button class="add-button">Add to basket</button>
+					</div>
+
+					<div class="product">
+						<div class="product__image-wrapper">
+							<img class="product__image" src="images/product-image.jpg" alt="product__image">	
+						</div>
+						<p class="product__title"><strong>Mongoose Agatz Elite Black</strong></p>
+						<p class="product__attributes">Rim | Mongoose | 28"</p>
+						<p class="product__stock-counter"><strong>50 in stock</strong></p>
+						<div class="product__price">
+								<span class="product__action-price">€ 686,25</span>
+								<span class="product__sales-price">€ 686,25</span>
+						</div>
+						<!-- <p class="product__price">€ 686,25</p> -->
+						<button class="add-button">Add to basket</button>
+					</div>
+
+					<div class="product">
+						<div class="product__image-wrapper">
+							<img class="product__image" src="images/product-image.jpg" alt="product__image">	
+						</div>
+						<p class="product__title"><strong>Mongoose Agatz Elite Black</strong></p>
+						<p class="product__attributes">Rim | Mongoose | 28"</p>
+						<p class="product__stock-counter"><strong>50 in stock</strong></p>
+						<div class="product__price">
+								<span class="product__action-price">€ 686,25</span>
+								<span class="product__sales-price">€ 686,25</span>
+						</div>
+						<!-- <p class="product__price">€ 686,25</p> -->
+						<button class="add-button">Add to basket</button>
+					</div>
+
+					<div class="product">
+						<div class="product__image-wrapper">
+							<img class="product__image" src="images/product-image.jpg" alt="product__image">	
+						</div>
+						<p class="product__title"><strong>Mongoose Agatz Elite Black</strong></p>
+						<p class="product__attributes">Rim | Mongoose | 28"</p>
+						<p class="product__stock-counter"><strong>50 in stock</strong></p>
+						<div class="product__price">
+								<span class="product__action-price">€ 686,25</span>
+								<span class="product__sales-price">€ 686,25</span>
+						</div>
+						<!-- <p class="product__price">€ 686,25</p> -->
+						<button class="add-button">Add to basket</button>
+					</div>
+
+					<div class="product">
+						<div class="product__image-wrapper">
+							<img class="product__image" src="images/product-image.jpg" alt="product__image">	
+						</div>
+						<p class="product__title"><strong>Mongoose Agatz Elite Black</strong></p>
+						<p class="product__attributes">Rim | Mongoose | 28"</p>
+						<p class="product__stock-counter"><strong>50 in stock</strong></p>
+						<div class="product__price">
+								<span class="product__action-price">€ 686,25</span>
+								<span class="product__sales-price">€ 686,25</span>
+						</div>
+						<!-- <p class="product__price">€ 686,25</p> -->
+						<button class="add-button">Add to basket</button>
+					</div>
+
+					<div class="product">
+						<div class="product__image-wrapper">
+							<img class="product__image" src="images/product-image.jpg" alt="product__image">	
+						</div>
+						<p class="product__title"><strong>Mongoose Agatz Elite Black</strong></p>
+						<p class="product__attributes">Rim | Mongoose | 28"</p>
+						<p class="product__stock-counter"><strong>50 in stock</strong></p>
+						<div class="product__price">
+								<span class="product__action-price">€ 686,25</span>
+								<span class="product__sales-price">€ 686,25</span>
+						</div>
+						<!-- <p class="product__price">€ 686,25</p> -->
+						<button class="add-button">Add to basket</button>
+					</div>
+
+					<div class="product">
+						<div class="product__image-wrapper">
+							<img class="product__image" src="images/product-image.jpg" alt="product__image">	
+						</div>
+						<p class="product__title"><strong>Mongoose Agatz Elite Black</strong></p>
+						<p class="product__attributes">Rim | Mongoose | 28"</p>
+						<p class="product__stock-counter"><strong>50 in stock</strong></p>
+						<div class="product__price">
+								<span class="product__action-price">€ 686,25</span>
+								<span class="product__sales-price">€ 686,25</span>
+						</div>
+						<!-- <p class="product__price">€ 686,25</p> -->
+						<button class="add-button">Add to basket</button>
+					</div>
+
+					<div class="product">
+						<div class="product__image-wrapper">
+							<img class="product__image" src="images/product-image.jpg" alt="product__image">	
+						</div>
+						<p class="product__title"><strong>Mongoose Agatz Elite Black</strong></p>
+						<p class="product__attributes">Rim | Mongoose | 28"</p>
+						<p class="product__stock-counter"><strong>50 in stock</strong></p>
+						<div class="product__price">
+								<span class="product__action-price">€ 686,25</span>
+								<span class="product__sales-price">€ 686,25</span>
+						</div>
+						<!-- <p class="product__price">€ 686,25</p> -->
+						<button class="add-button">Add to basket</button>
+					</div>
+
+					<div class="product">
+						<div class="product__image-wrapper">
+							<img class="product__image" src="images/product-image.jpg" alt="product__image">	
+						</div>
+						<p class="product__title"><strong>Mongoose Agatz Elite Black</strong></p>
+						<p class="product__attributes">Rim | Mongoose | 28"</p>
+						<p class="product__stock-counter"><strong>50 in stock</strong></p>
+						<div class="product__price">
+								<span class="product__action-price">€ 686,25</span>
+								<span class="product__sales-price">€ 686,25</span>
+						</div>
+						<!-- <p class="product__price">€ 686,25</p> -->
+						<button class="add-button">Add to basket</button>
+					</div>
+
+
+
+					
+
 					<!-- <div class="show-next">
-						<button>Show next 25 products</button>
+						<button>Show next 25 products</button>m
 					</div> -->
 				</section>
 				
-				<section class="recently-viewed">
-					<h2>Recently viewed</h2>
-					<a href="#">View all</a>
-					<a href="#">Clear list</a>
-					<ul class="recent-products">
-						<li>
-							<img src="" alt="product-image" width="65" height="65">
-							<h3 class="product-title">Mongoose Agatz Elite Black</h3>
-							<p class="product-attributes">Rim | Mongoose | 28"</p>
-							<p class="product-price">€ 686,25</p>
+				<section class="recent-products-wrapper">
+					<h3 class="recent-products__title">Recently viewed</h3>
+					<a href="#" class="recent-products__action-link">View all</a>
+					<a href="#" class="recent-products__action-link">Clear list</a>
+
+					<ul class="r-product-list">
+						<li class="r-product">
+							<img class="r-product__image" src="images/r-product-image.png" alt="product-image">
+							<div class="r-product__title"><strong>Mongoose Agatz Elite Black</strong></div>
+							<p class="r-product__attributes">Rim | Mongoose | 28"</p>
+							<div class="r-product__price">
+								<span class="r-product__action-price">€ 686,25</span>
+								<span class="r-product__sales-price">€ 686,25</span>
+							</div>
 						</li>
 
-						<li>
-							<img src="" alt="product-image" width="65" height="65">
-							<h3 class="product-title">Mongoose Agatz Elite Black</h3>
-							<p class="product-attributes">Rim | Mongoose | 28"</p>
-							<p class="product-price">€ 686,25</p>
+						<li class="r-product">
+							<img class="r-product__image" src="images/r-product-image.png" alt="product-image">
+							<div class="r-product__title"><strong>Mongoose Agatz Elite Black</strong></div>
+							<p class="r-product__attributes">Rim | Mongoose | 28"</p>
+							<div class="r-product__price">
+								<span class="r-product__action-price">€ 686,25</span>
+								<span class="r-product__sales-price">€ 686,25</span>
+							</div>
 						</li>
 
-						<li>
-							<img src="" alt="product-image" width="65" height="65">
-							<h3 class="product-title">Mongoose Agatz Elite Black</h3>
-							<p class="product-attributes">Rim | Mongoose | 28"</p>
-							<p class="product-price">€ 686,25</p>
+						<li class="r-product">
+							<img class="r-product__image" src="images/r-product-image.png" alt="product-image">
+							<div class="r-product__title"><strong>Mongoose Agatz Elite Black</strong></div>
+							<p class="r-product__attributes">Rim | Mongoose | 28"</p>
+							<div class="r-product__price">
+								<span class="r-product__action-price">€ 686,25</span>
+								<span class="r-product__sales-price">€ 686,25</span>
+							</div>
 						</li>
-						
 					</ul>
+					
 				</section>
 
 		</section>
 		<!-- UNDER -->
 		<section class="features">
-			<ul>
-				<li>Free returns</li>
-				<li>free shipping on orders above $90,00</li>
-				<li>Next day delivery</li>
-				<li>secure payments</li>
+			<ul class="features-list">
+				<li class="features-list__item">Free returns</li>
+				<li class="features-list__separator"></li>
+				<li class="features-list__item">free shipping on orders above $90,00</li>
+				<li class="features-list__separator"></li>
+				<li class="features-list__item">Next day delivery</li>
+				<li class="features-list__separator"></li>
+				<li class="features-list__item">secure payments</li>
 			</ul>
 		</section>
 
 	</main>
 	<!-- Page footer -->
-	<footer>
-		<div class="center">
-			<div class="footer-top">
-				<div class="sitemap">
-					<h3>Sitemap</h3>
-					<ul>
-						<li><a href="#">Home</a></li>
-						<li><a href="#">My account</a></li>
-						<li><a href="#">Basket</a></li>
-						<li><a href="#">Wishlist</a></li>
-						<li><a href="#">Help</a></li>
-						<li><a href="#">Contact us</a></li>
-						<li><a href="#">Customer service</a></li>
-						<li><a href="#">Now on sale</a></li>
+	<footer class="footer">
+		
+			<section class="footer__top">
+				<section class="footer-column sitemap">
+					<h3 class="footer-column__title">Sitemap</h3>
+					<ul class="footer-column__list">
+						<li class="sitemap__item"><a class="sitemap__link" href="#">Home</a></li>
+						<li class="sitemap__item"><a class="sitemap__link" href="#">My account</a></li>
+						<li class="sitemap__item"><a class="sitemap__link" href="#">Basket</a></li>
+						<li class="sitemap__item"><a class="sitemap__link" href="#">Wishlist</a></li>
+						<li class="sitemap__item"><a class="sitemap__link" href="#">Help</a></li>
+						<li class="sitemap__item"><a class="sitemap__link" href="#">Contact us</a></li>
+						<li class="sitemap__item"><a class="sitemap__link" href="#">Customer service</a></li>
+						<li class="sitemap__item"><a class="sitemap__link" href="#">Now on sale</a></li>
 					</ul>
-				</div>
-				<div class="social">
-					<h3>Social media</h3>
-					<ul>
+				</section>
+
+				<section class="footer-column social">
+					<h3 class="footer-column__title">Social media</h3>
+					<ul class="footer-column__list">
 						<!-- Twitter -->
-						<li><a href="#" class="twitter" title="Twitter"></a></li>
+						<li class="social__item"><a class="social__link twitter" href="#" title="Twitter"></a></li>
 						<!-- Pinterest -->
-						<li><a href="#" class="pinterest" title="Pinterest"></a></li>
+						<li class="social__item"><a class="social__link pinterest" href="#" title="Pinterest"></a></li>
 						<!-- Facebook -->
-						<li><a href="#" class="facebook" title="Facebook"></a></li>
+						<li class="social__item"><a class="social__link facebook" href="#" title="Facebook"></a></li>
 						<!-- Google plus -->
-						<li><a href="#" class="google-plus" title="Google Plus"></a></li>
+						<li class="social__item"><a class="social__link google-plus" href="#" title="Google Plus"></a></li>
 						<!-- Linkedin -->
-						<li><a href="#" class="linkedin" title="Linkedin"></a></li>
+						<li class="social__item"><a class="social__link linkedin" href="#" title="Linkedin"></a></li>
 					</ul>
-				</div>
-				<div class="subscribe">
-					<h3>Subscribe to our newsletter</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliqua lorem enim, fermentum semper viverra t amet.</p>
+				</section>
+
+				<section class="footer-column subscribe">
+					<h3 class="footer-column__title">Subscribe to our newsletter</h3>
+					<p class="subscribe__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliqua lorem enim, fermentum semper viverra t amet.</p>
 					<form action="" class="subscribe-form">
-						<div class="form-group"><input placeholder="hello" type="text"><input type="submit" value="Subscribe"></div>
+						<input class="subscribe-form__text" placeholder="hello" type="text">
+						<input class="subscribe-form__submit" type="submit" value="Subscribe">
 					</form>
-				</div>
-			</div>
-			<div class="footer-bottom">
-				<div class="copyrights">© Copyright 2017 Sana Commerce. All rights reserved.</div>
-				<div class="footer-links">
-					<ul>
-						<li><a href="#">About us</a></li>
-						<li><a href="#">Contact us</a></li>
-						<li><a href="#">Help</a></li>
-						<li><a href="#">Privacy policy</a></li>
-						<li><a href="#">Disclaimer</a></li>
-						<li><a href="#">New item</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
+				</section>
+			</section>
+
+			<section class="footer__bottom">
+				<section class="copyrights">© Copyright 2017 Sana Commerce. All rights reserved.</section>
+				<section class="footer-links">
+					<a class="footer-links__link" href="#">About us</a>
+					<a class="footer-links__link" href="#">Contact us</a>
+					<a class="footer-links__link" href="#">Help</a>
+					<a class="footer-links__link" href="#">Privacy policy</a>
+					<a class="footer-links__link" href="#">Disclaimer</a>
+					<a class="footer-links__link" href="#">New item</a>
+				</section>
+			</section>
+		
 	</footer>
 	
 	<!-- Import jquery lib -->

@@ -18,6 +18,6 @@
 	background: #11f;
 }
 
-.sub-menu {
-	/*display: none;*/
+.user-menu__dropdown:hover {
+	box-shadow: 0 0 2px 0 #00f;
 }
