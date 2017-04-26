@@ -1,3 +1,20 @@
+/*
+
+need styles:
+
+	font colors
+		#000000 headings text (h1-h6)
+		#333333 bold text
+		#b2b2b2 normal text
+		#cb2245 required info
+		#1f7bc9 links, button-active
+		#2289e3	button-hover
+		#f78400 button-active
+		#f09630 button-hover
+
+*/
+
+
 /* Main */
 html, 
 body,
@@ -54,17 +71,24 @@ html, body {
 	right: 15px;
 	width: 11px;
 	height: 5px;
-	background-color: #000;
+	background: url("../images/icons/arrow-down-grey.png") no-repeat 0 0;
 }
 
 .dropdown-menu {
 	list-style: none;
+	border-bottom: 1px solid #e6e6e6;
 }
 
 .language-switcher__image {
 	margin-right: 1.083333333333333rem; /* 13px / 12px */
 	width: 16px;
 	height: 11px;
+}
+
+.language-switcher__link,
+.my-account__item {
+	text-decoration: none;
+	color: #333;
 }
 
 .language-switcher__text,
@@ -77,12 +101,11 @@ html, body {
 .my-account__icon {
 	display: inline-block;
 	margin-bottom: -4px;
-	/* margin-right: 1.083333333333333rem; /* 13px / 12px */
 	margin-right: 1rem; /* 13px / 12px */
-	width: 15px;
-	height: 17px;
+	width: 16px;
+	height: 18px;
 	line-height: 40px;
-	background-color: #000;
+	background: url("../images/icons/login-red.png") no-repeat 0 0;
 }
 
 .header__middle {
@@ -91,6 +114,7 @@ html, body {
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-between;
+	border-bottom: 1px solid #e6e6e6;
 }
 
 .main-menu {
@@ -101,12 +125,17 @@ html, body {
 	order: 1;
 	width: 62px;
 	height: 62px;
+	background: url("../images/icons/nav-open.png") no-repeat 50% 50%;
+	border-right: 1px solid #e6e6e6;
+}
+
+.main-menu-opener.expanded {
+	background-image: url("../images/icons/nav-close.png");
 }
 
 .page-logo {
 	order: 2;
 	width: 114px;
-	height: 31px;
 }
 
 .page-logo__image {
@@ -119,16 +148,36 @@ html, body {
 	width: 100%;
 	box-sizing: border-box;
 	padding: 1.666666666666667rem 1.25rem; /* 20px / 12px, 15px / 12px */
+	border-top: 1px solid #e6e6e6;
+
 }
 
 .search-form__elements-wrapper {
 	position: relative;
 	height: 42px;
+	overflow: hidden;
+	border-radius: 3px;
 }
 
 .search-form__text-input {
 	width: 100%;
 	height: 100%;
+	border: 1px solid #e6e6e6;
+	padding-left: 1rem;
+	font-family: 'Oxygen', sans-serif;
+	font-size: 1.083333333333333rem; /* 13px / 12px */
+	outline: none;
+}
+
+.search-form__text-input::placeholder {
+	color: #bfbfbf;
+	font-style: italic;
+}
+
+.search-form__text-input:focus {
+	color: #000;
+	font-style: normal;
+	border: 1px solid #e6e6e6;
 }
 
 .search-form__button {
@@ -137,12 +186,20 @@ html, body {
 	bottom: 0;
 	right: 0;
 	width: 55px;
+	border: none;
+	background-color: #1f7bc9;
+}
+
+.search-form__button:hover {
+	background-color: #2289e3;	
 }
 
 .shopping-cart {
 	order: 3;
 	width: 62px;
 	height: 62px;	
+	background-color: #f78400;
+	border-left: 1px solid #e6e6e6;
 }
 
 .header__bottom {

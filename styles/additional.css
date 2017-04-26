@@ -9,15 +9,3 @@
 .header__bottom {
 	box-shadow: 0 0 2px 0 #00f;
 }*/
-
-.main-menu-opener {
-	background: #f11;
-}
-
-.shopping-cart {
-	background: #11f;
-}
-
-.user-menu__dropdown:hover {
-	box-shadow: 0 0 2px 0 #00f;
-}
