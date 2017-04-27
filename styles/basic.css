@@ -20,14 +20,51 @@ body {
 			#f09630 button-hover
 */
 
+* {
+	box-sizing: border-box;
+}
+
 /* 
 	Typography
 */
 h1, .h1,
 h2, .h2,
-h3, .h3 { /* ... */ }
+h3, .h3 {
+	font-family: 'Pathway Gothic One', sans-serif;
+}
+
+/* is it good naming? */
+.basic-text {
+	font-family: 'Oxygen', sans-serif;
+	/*
+	+ font-size
+	+ line-height
+	*/
+}
+
+/*
+	Hypertext links
+*/
 
 a {
 	text-decoration: none;
-	/* ... */
+}
+
+/*
+	Buttons collection
+*/
+
+/*
+	Reset unnecessary list-style presentation for <ul>
+*/
+.drodown-menu,
+.menu,
+.sub-menu,
+.active-filters__list,
+.filters-list,
+.r-product-list,
+.features-list,
+.footer-column__list { 
+	list-style: none;
+	margin: 0;
 }

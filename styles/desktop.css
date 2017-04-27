@@ -76,43 +76,7 @@
 		height: 42px;
 	}
 
-			/* Rewrite it */
-			.main-menu-opener {
-				display: none;
-			}
-
-			.main-menu__item {
-				padding: 0 0.8333333333333333rem;
-			}
-			
-			.main-menu__wrapper {
-				display: block;
-				position: static;
-			}
-
-			.main-menu {
-				position: relative;
-			}
-
-			.main-menu__item {
-				display: inline-block;
-				width: auto;
-			}
-
-			.sub-menu {
-				display: none;
-				top: 100%;
-				left: 0;
-				right: 0;
-				width: 100%;
-				height: 310px;
-				background-color: #fff;
-			}
-
-			.sub-menu-lvl-1__item {
-				width: 25%;
-			}
-			/* Rewrite it --end-- */
+	/* Styles for menu */
 			
 	/* HEADER end */
 
