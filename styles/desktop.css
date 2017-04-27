@@ -53,9 +53,9 @@
 	.header__middle {
 		padding: 0 10px;
 		height: 42px;
+		border-bottom: none;
 		margin-bottom: 18px;
 	}
-
 
 	.page-logo,
 	.search-form {
@@ -77,7 +77,20 @@
 	}
 
 	/* Styles for menu */
-			
+	.menu-opener {
+		display: none;
+	}
+
+	.menu__wrapper {
+		display: block;
+		position: static;
+	}
+
+	.menu__item {
+		width: auto;
+		display: inline-block;
+	}
+
 	/* HEADER end */
 
 	.above-content {
