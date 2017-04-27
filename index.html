@@ -3,23 +3,26 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Sana shop</title>
 	<link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
 	<!-- <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> -->
 	<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> -->
-
-	<link rel="stylesheet" href="styles/additional.css">
 	
+			<!-- Additional __start__ -->
+			<link rel="stylesheet" href="styles/additional.css">
+			<!-- Additional __end__ -->
+
 	<!-- Normalize CSS -->
 	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/basic.css">
 	<!-- Mobile -->
-	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/mobile.css">
 	<!-- Tablet -->
 	<link rel="stylesheet" href="styles/tablet.css">
 	<!-- Desktop -->
 	<link rel="stylesheet" href="styles/desktop.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	<header class="header">
@@ -91,7 +94,7 @@
 		</section>
 
 		<section class="header__middle">
-			<div class="main-menu-opener"></div>
+			<div class="menu-opener"></div>
 			
 			<a class="page-logo" href="#"><img src="images/pic/sana-logo.png" alt="page-logo-image" class="page-logo__image"></a>
 			
@@ -107,10 +110,32 @@
 
 
 		<div class="header__bottom">
+			
 			<nav class="menu__wrapper">
 				<ul class="menu">
 					<li class="menu__item"><a class="menu__link" href="#">new</a></li>
 					<li class="menu__item expander"><a class="menu__link" href="#">touring bikes</a>
+						<!-- Sub -->
+						<ul class="sub-menu">
+							<!-- Sub title -->
+							<li class="sub-menu__item title">
+								<a href="#">Title</a>
+							</li>
+							<!-- Sub items -->
+							<li class="sub-menu__item">
+								<a href="#">Item</a>
+							</li>
+							<li class="sub-menu__item">
+								<a href="#">Item</a>
+							</li>
+							<li class="sub-menu__item">
+								<a href="#">Item</a>
+							</li>
+							<!-- View more link -->
+							<li class="sub-menu__item view-more">
+								<a href="#">View more...</a>
+							</li>
+						</ul>
 					<!-- <li class="main-menu__item"><a class="main-menu__link" href="#">city bikes</a></li> -->
 						<!-- SUB-MENU start -->
 						<!-- <div class="sub-menu">
@@ -162,8 +187,8 @@
 					<li class="main-menu__item"><a class="main-menu__link" href="#">about us</a></li>
 					<li class="main-menu__item"><a class="main-menu__link" href="#">contact</a></li> -->
 				</ul>
-
 			</nav>
+
 		</div>
 	</header>
 

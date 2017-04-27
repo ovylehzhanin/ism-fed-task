@@ -1,38 +1,10 @@
 /*
 
-need styles:
-
-	font colors
-		#000000 headings text (h1-h6)
-		#333333 bold text
-		#b2b2b2 normal text
-		#cb2245 required info
-		#1f7bc9 links, button-active
-		#2289e3	button-hover
-		#f78400 button-active
-		#f09630 button-hover
+	Add @media {} here...
 
 */
 
-
-/* Main */
-html, 
-body,
-header ul,
-aside ul,
-footer ul {
-	margin: 0;
-	padding: 0;
-}
-
-html, body {
-	font-family: 'Oxygen', sans-serif;
-	font-size: 12px;
-	font-weight: 400;
-}
-
 /* HEADER start */
-
 .header {
 	display: flex;
 	flex-direction: column;
@@ -117,22 +89,6 @@ html, body {
 	border-bottom: 1px solid #e6e6e6;
 }
 
-.main-menu {
-	list-style: none;
-}
-
-.main-menu-opener {
-	order: 1;
-	width: 62px;
-	height: 62px;
-	background: url("../images/icons/nav-open.png") no-repeat 50% 50%;
-	border-right: 1px solid #e6e6e6;
-}
-
-.main-menu-opener.expanded {
-	background-image: url("../images/icons/nav-close.png");
-}
-
 .page-logo {
 	order: 2;
 	width: 114px;
@@ -206,16 +162,36 @@ html, body {
 	order: 3;
 }
 
+.menu-opener {
+	order: 1;
+	width: 62px;
+	height: 62px;
+	/*background: url("../images/icons/nav-open.png") no-repeat 50% 50%;*/
+	border-right: 1px solid #e6e6e6;
+}
+
+.menu-opener.expanded {
+	background-image: url("../images/icons/nav-close.png");
+}
+
+.main-menu {
+	list-style: none;
+}
+
+.main-menu__item {
+	font-family: 'Pathway Gothic One', sans-serif;
+}
+
 .main-menu__item {
 	min-height: 42px;
-	padding: 0 1.25rem;
-	font-family: 'Pathway Gothic One', sans-serif;
-	font-size: 1.666666666666667rem; /* 20px / 12px */
 	line-height: 42px;
+	padding: 0 1.25rem;
+	font-size: 1.666666666666667rem; /* 20px / 12px */
 	text-transform: uppercase;
 }
 
 .main-menu__link {
+	color: #000;
 	text-decoration: none;
 }
 
@@ -227,6 +203,7 @@ html, body {
 
 .sub-menu-lvl-1__link {
 	font-size: 18px; /* 18px / 12px*/
+	color: #000;
 	text-decoration: none;
 }
 
@@ -236,10 +213,6 @@ html, body {
 
 .sub-menu-lvl-2__item {
 	font-size: 1.083333333333333rem; /* 13px / 12px */
-	line-height: 24px;
-}
-
-.sub-menu-lvl-2__item {
 	font-family: 'Oxygen', sans-serif;
 	text-transform: capitalize;
 }
@@ -248,12 +221,19 @@ html, body {
 	content: "› ";
 }
 
-.above-content__wrapper { display: none; }
+.sub-menu-lvl-2__link {
+	color: #333;
+}
 
+.sub-menu-lvl-2__item:last-child .sub-menu-lvl-2__link {
+	color: #1f7bc9;
+	font-weight: 700;
+}
+
+.above-content__wrapper { display: none; }
 /* HEADER end */
 
 /* MAIN start */
-
 .filters-opener {
 	height: 57px;
 	text-align: center;
@@ -531,7 +511,6 @@ html, body {
 .features-list__separator {
 	display: none;
 }
-
 /* MAIN end */
 
 
@@ -610,5 +589,4 @@ html, body {
 .footer-links__link:not(:last-child) {
 	margin-right: 0.9166666666666667rem; /* 11px / 12px */
 }
-
 /* FOOTER end */
