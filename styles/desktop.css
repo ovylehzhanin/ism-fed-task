@@ -85,10 +85,31 @@
 		display: block;
 		position: static;
 	}
+	
+	.menu {
+		background: none;
+	}
 
 	.menu__item {
 		width: auto;
 		display: inline-block;
+	}
+
+	.menu__item.expander {
+		background-image: none;
+	}
+
+	.sub-menu__wrapper {
+		display: flex;
+		top: 100%;
+		left: 0;
+		right: 0;
+		height: 311px;
+		border: 1px solid #000;
+	}
+
+	.sub-menu {
+		
 	}
 
 	/* HEADER end */
