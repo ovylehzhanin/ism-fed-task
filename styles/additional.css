@@ -9,3 +9,7 @@
 .header__bottom {
 	box-shadow: 0 0 2px 0 #00f;
 }*/
+
+.user-menu__dropdown:hover {
+	box-shadow: 0 0 1px 0 #000;
+}

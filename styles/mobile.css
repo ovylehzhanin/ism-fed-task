@@ -25,6 +25,11 @@
 		padding: 0 1.25rem; /* 15px / 12px */
 	}
 
+	.dropdown-menu__item:hover {
+		background-color: #f2f2f2;
+	}
+	
+
 	.dropdown-menu__expander {
 		background-color: #f2f2f2;
 		position: relative;
@@ -406,6 +411,18 @@
 		height: auto;
 	}
 
+	.product__title a {
+		color: #333333;
+	}
+
+	.product__title a:hover {
+		text-decoration: underline;
+	}
+
+	.product__attributes {
+		color: #999999;
+	}
+
 	.product__action-price,
 	.r-product__action-price {
 		font-size: 11.02px;
@@ -432,21 +449,72 @@
 
 	.product__stock-counter {
 		display: none;
+		color: #47b200;
 	}
 
 	.product__price {
 		margin-bottom: 1rem;
 	}
 
+	.product__action-price {
+		color: #b2b2b2;
+		text-decoration: line-through;
+	}
+
+	.product__sales-price {
+		color: #cb2245;
+	}
+
+	.product__sales-price sup {
+		font-size: 1rem;
+	}
+
 	.add-button {
+		position: relative;
 		display: block;
 		margin: 0 auto;
+		width: 125px;
+		height: 30px;
 		padding-left: 0.9166666666666667rem; /* 11px / 12px */
 		font-family: 'Pathway Gothic One', sans-serif;
 		font-size: 1.5rem; /* 18px / 12px */
 		text-align: left;
 		text-transform: uppercase;
-		width: 125px;
+		color: #fff;
+		text-shadow: 0 1px 1px rgba(0, 0, 0, .5);
+		background-color: #f78400;
+		border-width: 0px 0px 1px 0px;
+		border-style: solid;
+		border-color: #ac5c00;
+		border-radius: 3px;
+	}
+
+	.add-button:hover {
+		background-color: #f09630;
+	}
+
+	.add-button::before {
+		position: absolute;
+		content: "";
+		top: 8px;
+		right: 10px;
+		width: 8px;
+		height: 13px;
+		background-image: url("../images/icons/btn-arrow-right.png");
+		background-repeat: no-repeat;
+		background-position: 0 0;
+	}
+
+	.add-button::after {
+		position: absolute;
+		content: "";
+		top: 0;
+		bottom: 0;
+		right: -10px;
+		width: 38px;
+		background-image: url("../images/icons/btn-bg-right-bottom.png");
+		background-repeat: no-repeat;
+		background-position: 0 0;
 	}
 
 	.recent-products-wrapper {
@@ -468,6 +536,10 @@
 	.recent-products__action-link {
 		margin-right: 1rem;
 		font-weight: bold;
+	}
+
+	.recent-products__action-link:hover {
+		text-decoration: underline;
 	}
 
 	.r-product-list {
@@ -493,9 +565,33 @@
 
 	.r-product__title,
 	.r-product__attributes,
-	.r-product__stock-counter,
 	.r-product__price {
 		margin-left: 76px;
+	}
+
+	.r-product__title a {
+		color: #333333;
+	}
+
+	.r-product__title a:hover {
+		text-decoration: underline;
+	}
+
+	.r-product__attributes {
+		color: #999999;
+	}
+
+	.r-product__action-price {
+		color: #cccccc;
+		text-decoration: line-through;
+	}
+
+	.r-product__sales-price {
+		color: #cb2245;
+	}
+
+	.r-product__sales-price sup {
+		font-size: 1rem;
 	}
 
 	.features {
@@ -603,6 +699,7 @@
 	.social__item {
 		float: left;
 		margin-right: 0.5rem; /* 6px / 12px */
+		margin-bottom: 0.5rem;
 	}
 
 	.social__link {
@@ -645,27 +742,109 @@
 
 	.subscribe__description {
 		line-height: 2rem;
-		color: #808080;
+		color: #999999;
 	}
 
 	.subscribe-form {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: nowrap;
 		width: 100%;
+		height: 35px;
+	}
+
+	.subscribe-form::after {
+		display: block;
+		content: "";
+		clear: both;
 	}
 
 	.subscribe-form__text {
-		width: 70%;
+		float: left;
+		height: 100%;
+		width: 67%;
+		padding: 0 1rem;
+		font-family: 'Oxygen', sans-serif;
+		font-size: 1.083333333333333rem; /* 13px / 12px */
+		font-style: normal;
+		outline: none;
+		background-color: #f2f2f2;
+		border-width: 0px 0px 1px 0px;
+		border-style: solid;
+		border-color: #c2c2c2;
+		border-radius: 3px;
+	}
+	
+	.subscribe-form__text::placeholder {
+		color: #bfbfbf;
+		font-style: italic;
 	}
 
-	.subscrive-form__submit {
-		width: 30%;
+	.subscribe-form__submit {
+		position: relative;
+		float: right;
+		height: 100%;	
+		width: 32%;
+		padding-left: 3.5%;
+		font-family: "Pathway Gothic One", sans-serif;
+		font-size: 1.416666666666667rem; /* 17px / 12px */
+		color: #fff;
+		outline: none;
+		text-shadow: 0 1px 1px rgba(0, 0, 0, .4);
+		line-height: 1;
+		text-align: left;
+		text-transform: uppercase;
+		border-width: 0px 0px 1px 0px;
+		border-style: solid;
+		border-color: #1962a1;
+		border-radius: 3px;
+		background-color: #1f7bc9;
+		
+		/*
+			1f7bc9
+			3688cf
+
+			1f7bc9
+			3688cf
+		*/
 	}
+
+	.subscribe-form__submit:hover {
+		background-color: #3688cf;
+	}
+
+	.subscribe-form__submit::before {
+		position: absolute;
+		content: "";
+		top: 0;
+		bottom: 0;
+		right: 0;
+		width: 30px;
+		background-image: url("../images/icons/btn-bg-right-bottom.png");
+		background-repeat: no-repeat;
+		background-position: 0 0;
+	}
+
+	.subscribe-form__submit::after {
+		position: absolute;
+		content: "";
+		width: 8px;
+		height: 13px;
+		top: 11px;
+		right: 13.04347826086957%; /* 12px / 92px */
+		background-image: url("../images/icons/btn-arrow-right.png");
+		background-repeat: no-repeat;
+		background-position: 0 0;
+	}
+
+	/*
+
+		67.61363636363636
+		31.97
+		1.420454545454545
+
+	*/
 
 	.copyrights {
 		text-align: center;
-		color: #4c4c4c;
+		color: #999999;
 	}
 
 	.footer-links {
@@ -673,7 +852,7 @@
 	}
 
 	.footer-links__link {
-		color: #808080;
+		color: #999999;
 	}
 
 	.footer-links__link:hover {

@@ -2,7 +2,7 @@
 	
 	.header__top,
 	.header__middle,
-	.header__bottom,
+	.menu__wrapper,
 	.above-content,
 	.main,
 	.footer__top,
@@ -14,7 +14,8 @@
 	
 	/* HEADER start */
 	.header__top {
-		padding: 1rem 0.8333333333333333rem; /* 12px / 12px, 10px / 12px */
+		padding: 0 0.8333333333333333rem; /* 12px / 12px, 10px / 12px */
+		margin-bottom: 1rem;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: nowrap;
@@ -22,7 +23,23 @@
 	}
 
 	.contact-info {
+		position: relative;
 		display: block;
+		padding: 1rem 0 1rem 2rem; /* 28px / 12px */
+		color: #999999;
+	}
+
+	.contact-info::before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 9px;
+		left: 0;
+		width: 18px;
+		height: 18px;
+		background-image: url("../images/icons/phone.png");
+		background-repeat: no-repeat;
+		background-position: 0 0;
 	}
 
 	.user-menu {
@@ -44,6 +61,11 @@
 
 	.user-menu__link {
 		display: inline;
+	}
+
+	.user-menu__dropdown,
+	.user-menu__link {
+		padding: 1rem 0;
 	}
 
 	.my-account__icon {
@@ -88,28 +110,50 @@
 	
 	.menu {
 		background: none;
+		padding: 0;
+		position: relative;
 	}
 
 	.menu__item {
+		min-height: 62px;
 		width: auto;
 		display: inline-block;
+		background-color: transparent;
+		border-width: 1px 1px 1px 1px;
+		border-color: transparent;
+	}
+
+	.menu__item:hover {
+		border-color: transparent;
+	}
+
+	.menu__link {
+		line-height: 62px;
 	}
 
 	.menu__item.expander {
 		background-image: none;
 	}
 
+	.menu__item.expander:hover {
+		background-color: #fff;
+		border-top-color: #e6e6e6;
+		border-left-color: #e6e6e6;
+		border-right-color: #e6e6e6;
+		border-bottom-color: #fff;
+	}
+
 	.sub-menu__wrapper {
-		display: flex;
+		display: none;
+		justify-content: flex-start;
 		top: 100%;
 		left: 0;
-		right: 0;
+		width: 100%;
 		height: 311px;
-		border: 1px solid #000;
 	}
 
 	.sub-menu {
-		
+		width: 20%;
 	}
 
 	/* HEADER end */
@@ -167,13 +211,13 @@
 	.sitemap__item {
 		width: 33.33%;
 	}
-
-	.sitemap,
-	.subscribe {
-		width: 40%;
+	
+	.subscribe-form__submit {
+		padding-left: 5.5%;
 	}
 
-	.social {
-		width: 20%;
+	.subscribe-form__submit::after {
+		right: 8%;
 	}
+	
 }
