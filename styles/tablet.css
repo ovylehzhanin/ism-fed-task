@@ -19,8 +19,31 @@
 		width: 62px;
 		height: 50px;
 		line-height: 50px;
+		border-width: 1px;
+		border-style: solid;
+		border-color: transparent;
 	}
 	
+	.user-menu__dropdown:hover {
+		border-color: #e6e6e6;
+	}
+
+	.user-menu__dropdown::after {
+		position: absolute;
+		display: none;
+		content: "";
+		width: 100%;
+		height: 1px;
+		top: 100%;
+		left: 0;
+		background: #fff;
+	}
+
+	.user-menu__dropdown:hover::after {
+		display: block;
+		z-index: 101;
+	}
+
 	.dropdown-menu__expander {
 		min-height: 50px;
 		background-color: #fff;
@@ -36,12 +59,14 @@
 
 	.dropdown-menu {
 		display: none;
+		padding: 1rem 0;
+		min-width: 122px;
 		position: absolute;
 		z-index: 100;
-		min-width: 122px;
 		top: 100%;
 		line-height: 40px;
 		background: #fff;
+		border: 1px solid #e6e6e6;
 	}
 
 	.user-menu__dropdown:hover .dropdown-menu {
@@ -53,13 +78,13 @@
 	}
 
 	.language-switcher .dropdown-menu {
-		min-width: 122px;
-		left: 0;
+		min-width: 124px;
+		left: -1px;
 	}
 
 	.my-account .dropdown-menu {
-		min-width: 164px;
-		right: 0;
+		min-width: 166px;
+		right: -1px;
 	}
 	
 	.header__middle {
@@ -147,6 +172,10 @@
 		display: flex;
 	}
 
+	.menu__link {
+		position: relative;
+	}
+
 	.sub-menu__wrapper {
 		display: none;
 		flex-wrap: wrap;
@@ -210,6 +239,7 @@
 	}
 
 	.above-content__header {
+		margin: 0;
 		float: left;
 		font-family: 'Pathway Gothic One', sans-serif;
 		font-size: 72px;

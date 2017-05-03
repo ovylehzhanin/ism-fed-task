@@ -38,9 +38,9 @@ $(document).ready(function() {
 	// 	}
 	// });
 
-	$('.menu-opener').click(function() {
-		$(this).toggleClass('expanded');
-		$('.menu__wrapper').toggle();
-	});
+	// $('.menu-opener').click(function() {
+	// 	$(this).toggleClass('expanded');
+	// 	$('.menu__wrapper').toggle();
+	// });
 
 });

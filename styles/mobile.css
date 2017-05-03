@@ -28,7 +28,6 @@
 	.dropdown-menu__item:hover {
 		background-color: #f2f2f2;
 	}
-	
 
 	.dropdown-menu__expander {
 		background-color: #f2f2f2;
@@ -106,7 +105,6 @@
 		box-sizing: border-box;
 		padding: 1.666666666666667rem 1.25rem; /* 20px / 12px, 15px / 12px */
 		border-top: 1px solid #e6e6e6;
-
 	}
 
 	.search-form__elements-wrapper {
@@ -652,8 +650,6 @@
 
 
 	/* FOOTER start */
-	.footer {}
-
 	.footer__top,
 	.footer__bottom {
 		padding: 1rem 1.25rem;
@@ -777,6 +773,10 @@
 		font-style: italic;
 	}
 
+	.subscribe-form__text:focus {
+		border-color: #1f7bc9;
+	}
+
 	.subscribe-form__submit {
 		position: relative;
 		float: right;
@@ -796,7 +796,6 @@
 		border-color: #1962a1;
 		border-radius: 3px;
 		background-color: #1f7bc9;
-		
 		/*
 			1f7bc9
 			3688cf
