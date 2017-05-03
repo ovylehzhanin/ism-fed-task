@@ -61,12 +61,35 @@
 
 	.user-menu__link {
 		display: inline;
-		padding: 1rem 0;
+		color: #333333;
 	}
+
+	.user-menu__link:hover {
+		text-decoration: underline;
+	}
+
+	.user-menu__link {
+		padding: 0 1.25rem;
+	}	
 
 	.user-menu__dropdown,
 	.user-menu__link {
-		padding: 1rem 0;
+		position: relative;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+
+	.user-menu__dropdown:first-child::before,
+	.user-menu__link::before {
+		position: absolute;
+		top: 25%;
+		right: -2px;
+		content: "";
+		display: block;
+		width: 1px;
+		height: 50%;
+		background-color: #ccc;
+		z-index: 6;
 	}
 
 	.my-account__icon {
@@ -97,6 +120,10 @@
 	.shopping-cart {
 		width: 42px;
 		height: 42px;
+	}
+
+	.header__bottom {
+		box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .3);
 	}
 
 	/* Styles for menu */

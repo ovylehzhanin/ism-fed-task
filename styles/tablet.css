@@ -59,7 +59,7 @@
 
 	.dropdown-menu {
 		display: none;
-		padding: 1rem 0;
+		padding: .5rem 0;
 		min-width: 122px;
 		position: absolute;
 		z-index: 100;
@@ -67,6 +67,10 @@
 		line-height: 40px;
 		background: #fff;
 		border: 1px solid #e6e6e6;
+	}
+
+	.dropdown-menu__item {
+		padding: 0 1rem;
 	}
 
 	.user-menu__dropdown:hover .dropdown-menu {
@@ -85,6 +89,22 @@
 	.my-account .dropdown-menu {
 		min-width: 166px;
 		right: -1px;
+	}
+
+	.my-account .dropdown-menu__item:first-child {
+		box-shadow: 0 1.083333333333333rem 0 -1rem #e6e6e6; /* 13px / 12px */
+	}
+
+	.my-account .dropdown-menu__item:last-child {
+		box-shadow: 0 -1.083333333333333rem 0 -1rem #e6e6e6; /* 13px / 12px */
+	}
+
+	.dropdown-menu__item:last-child .my-account__item {
+		color: #1f7bc9;
+	}
+
+	.dropdown-menu__item:last-child .my-account__item::before {
+		content: "› ";
 	}
 	
 	.header__middle {
