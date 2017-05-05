@@ -332,11 +332,19 @@
 
 				<section class="view-settings">
 					<div class="products-counter"><span>130</span> products in selection</div>
-					<div class="view-mode">
+					
+					<!-- <div class="view-mode">
 						<span class="view-mode__span">View:</span>
 						<a href="#" class="view-mode__switcher list"></a>
 						<a href="#" class="view-mode__switcher grid"></a>
-					</div>
+					</div> -->
+
+					<form action="" class="view-mode">
+						<label class="view-mode__text" for="">View:</label>
+						<input type="radio" id="grid-view" name="view-mode" class="view-mode__radio grid-view" checked><label class="view-mode__label" for="grid-view"></label>
+						<input type="radio" id="list-view" name="view-mode" class="view-mode__radio list-view"><label class="view-mode__label" for="list-view"></label>
+					</form>
+
 					<form action="" class="sorting">
 						<label for="sorting-mode" class="sorting__label"></label>
 						<select name="sorting-mode" id="sorting-mode">

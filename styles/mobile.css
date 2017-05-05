@@ -358,35 +358,50 @@
 	}
 
 	.view-mode {
-		display: table;
-	}
-
-	.view-mode__span,
-	.view-mode__switcher {
-		display: table-cell;
-		padding-right: 10px;
-	}
-
-	.view-mode__span {
-		line-height: 24px;
-	}
-
-	.view-mode__switcher {
-		width: 24px;
 		height: 24px;
-		/* temp styles */
-		position: relative;
+		width: 110px;
 	}
 
-	.view-mode__switcher::before {
+	.view-mode::after {
 		content: "";
-		position: absolute;
-		top: auto;
-		left: auto;
-		height: 24px;
-		width: 24px;
-		background: #ccc;
+		display: block;
+		clear: both;
 	}
+
+	.view-mode__text {
+		line-height: 25px;
+	}
+
+	.view-mode__radio {
+		display: none;
+	}
+
+	.view-mode__label {
+		float: right;
+		width: 25px;
+		height: 25px;
+		margin-left: 1.25rem;
+		background-repeat: no-repeat;
+		background-position: 0 -50px;
+	}
+
+	.view-mode__label:hover {
+		background-position-y: -25px;
+	}
+
+	.view-mode__radio:checked + .view-mode__label {
+		background-position-y: 0px;
+	}
+
+	.view-mode__radio.list-view + .view-mode__label {
+		background-image: url("../images/icons/view-list.png");
+	}
+
+	.view-mode__radio.grid-view + .view-mode__label {
+		background-image: url("../images/icons/view-grid.png");
+	}
+
+	/* continue */
 
 	.product-grid {
 		padding: 0 1.25rem;
