@@ -851,14 +851,12 @@
 
 	.footer-links__link {
 		color: #999999;
+		padding-left: 0.9166666666666667rem; /* 11px / 12px */
+		white-space: nowrap;
 	}
 
 	.footer-links__link:hover {
 		color: #4c4c4c;
-	}
-
-	.footer-links__link:not(:last-child) {
-		margin-right: 0.9166666666666667rem; /* 11px / 12px */
 	}
 	/* FOOTER end */	
 }

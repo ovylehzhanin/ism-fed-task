@@ -428,4 +428,8 @@
 	.subscribe-form__submit::after {
 		right: 11%;
 	}
+
+	.copyrights { text-align: left; }
+
+	.footer-links { text-align: right; }
 }
