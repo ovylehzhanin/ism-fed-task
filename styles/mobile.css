@@ -370,6 +370,7 @@
 
 	.view-mode__text {
 		line-height: 25px;
+		color: #999999;
 	}
 
 	.view-mode__radio {
@@ -383,6 +384,7 @@
 		margin-left: 1.25rem;
 		background-repeat: no-repeat;
 		background-position: 0 -50px;
+		cursor: pointer;
 	}
 
 	.view-mode__label:hover {

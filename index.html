@@ -339,13 +339,12 @@
 						<input type="radio" id="list-view" name="view-mode" class="view-mode__radio list-view"><label class="view-mode__label" for="list-view"></label>
 					</form>
 
-					<form action="" class="sorting">
-						<label for="sorting-mode" class="sorting__label"></label>
-						<select name="sorting-mode" id="sorting-mode">
-							<option value="price-asc">Price - ascending</option>
-							<option value="price-desc">Price - descending</option>
-						</select>
-					</form>
+					<div class="sorting">
+						<div class="sorting__label">Sort by:</div>
+						<div class="sorting__select">
+							<span class="sorting__placeholder">Price - ascending</span>
+						</div>
+					</div>
 				</section>
 
 				<section class="product-grid">
