@@ -362,6 +362,25 @@
 		text-decoration: underline;
 	}
 
+	.gender__select {
+		margin-top: 1rem;
+		height: 2.916666666666667rem; /* 35px / 12px */
+		padding: 1rem;
+		background-color: #fafafa;
+		background-image: url("../images/icons/arrow-down-grey.png");
+		background-repeat: no-repeat;
+		background-position: 95% 1.25rem;
+		border-radius: 3px;
+		border-width: 0px 0px 1px 0px;
+		border-style: solid;
+		border-color: #c8c8c8;
+	}
+
+	.gender__placeholder {
+		color: #999999;
+		font-style: italic;
+	}
+
 	/*.filters-list__checkbox { display: none; }*/
 
 	.link-action {
