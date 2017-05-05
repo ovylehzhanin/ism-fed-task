@@ -322,18 +322,47 @@
 		line-height: 24px;
 	}
 
-	.active-filters__remove-link,
-	.filters-list__checkbox {
+	.active-filters__remove-link {
 		margin-right: 1rem;
+		font-weight: bold;
 	}
 
-	.active-filters__remove-link {
-		font-weight: bold;
+	.filters-list__checkbox { display: none; }
+
+	.filters-list__label {
+		user-select: none;
+	}
+
+	.filters-list__label::before {
+		display: inline-block;
+		content: "";
+		width: 10px;
+		height: 10px;
+		margin-right: 0.8333333333333333rem; /* 10px / 12px */
+		background: transparent;
+		background-repeat: no-repeat;
+		background-position-x: 0;
+		background-position-y: 0;
+		background-image: url("../images/icons/form-checkbox.png");
+	}
+
+	.filters-list__label:hover::before { 
+		background-position-y: -20px;
+	}
+
+	.filters-list__checkbox:checked + .filters-list__label::before { 
+		background-position-y: -40px;
+	}
+
+	.filters-list__checkbox:checked + .filters-list__label:hover::before {
+		background-position-y: -60px;
 	}
 
 	.filters-list__label:hover {
 		text-decoration: underline;
 	}
+
+	/*.filters-list__checkbox { display: none; }*/
 
 	.link-action {
 		font-weight: 700;
