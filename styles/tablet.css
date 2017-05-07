@@ -7,6 +7,7 @@
 	}
 	
 	.user-menu {
+		display: block;
 		position: absolute;
 		top: 7px;
 		right: 66px;
@@ -123,6 +124,7 @@
 	}
 
 	.search-form {
+		display: block;
 		margin-left: -9.333333333333333rem; /* -112px / 12px */
 		order: 3;
 		padding: 0;
@@ -222,7 +224,6 @@
 		left: 0.8333333333333333rem;
 		bottom: 0;
 	}
-			
 	/* HEADER end */
 
 	.above-content__wrapper {

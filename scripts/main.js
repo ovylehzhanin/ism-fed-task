@@ -1,46 +1,38 @@
 $(document).ready(function() {
 	
-	// if ( $(window).width() < 640 ) {
-	// 	$('.mobile-item').hide();
-	// 	$('.list-expander').nextAll().hide();
-	// }
+	(function() {
+		var mobileMenuItems = ['.search-form', '.menu__wrapper', '.user-menu'];
 
-	// $('.menu-opener').click(function() {
-	// 	// e.preventDefault();
+		for (item in mobileMenuItems) {
+			$(mobileMenuItems[item]).addClass('mobile-menu-item');
+		}
 
-	// 	$('.mobile-item').toggleClass('expanded');
+		$('.menu-opener').click(function() {
+			$(this).toggleClass('expanded');
 
-	// 	if ( $(window).width() < 640 ) {
-	// 		$('.mobile-item').slideToggle('fast');
-	// 	}
+			if ( $(window).width() < 640 ) {
+				$('.mobile-menu-item').slideToggle('fast');
+			} else {
+				$('.menu__wrapper').toggle();
+			}
+		});
+	})();
 
-	// 	if ( $(window).width() >= 640 ) {
-	// 		$('.main-menu').toggleClass('visible');
-	// 	}
+	(function() {
+		$(window).resize(function() {
+			$('.mobile-menu-item').css('display', '');
 
-	// });
+			if ( $('.menu-opener').hasClass('expanded') ) {
+				$(window).width() > 640 ? $('.menu__wrapper').show() : $('.menu-opener').removeClass('expanded');
+			}
+		});
+	})();
 
-	// $('.filter-opener').click(function() {
 
-	// 	$('.left-column').slideToggle('fast');
-
-	// });
-
-	// $(window).resize(function() {
-		
-	// 	if ( !$('.mobile-item').hasClass('expanded') ) {
-	// 		$('.mobile-item').slideUp(0);
-	// 	}
-
-	// 	if ($(window).width() > 640) {
-	// 	    $('.mobile-item').css('display','');
-	// 	    $('.list-expander').nextAll().css('display', '');
-	// 	}
-	// });
-
-	// $('.menu-opener').click(function() {
-	// 	$(this).toggleClass('expanded');
-	// 	$('.menu__wrapper').toggle();
-	// });
+	(function() {
+		if ( $('.dropdown-menu__expander') ) {
+			console.log('hello');
+		}
+	})
 
 });

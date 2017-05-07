@@ -13,6 +13,8 @@
 		display: none;
 	}
 
+	.user-menu { display: none; }
+
 	.user-menu__link {
 		display: none;
 	}
@@ -46,6 +48,7 @@
 	}
 
 	.dropdown-menu {
+		display: none;
 		padding: 0;
 		margin: 0;
 		border-bottom: 1px solid #e6e6e6;
@@ -99,6 +102,7 @@
 	}
 
 	.search-form {
+		display: none;
 		order: 4;
 		width: 100%;
 		box-sizing: border-box;
@@ -175,6 +179,8 @@
 		background-image: url("../images/icons/nav-close.png");
 	}
 
+	.menu__wrapper { display: none; }
+
 	.menu {
 		padding: 0;
 	}
@@ -247,6 +253,7 @@
 	}
 
 	.above-content__wrapper { display: none; }
+	
 	/* HEADER end */
 
 	/* MAIN start */
