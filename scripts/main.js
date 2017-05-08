@@ -25,14 +25,23 @@ $(document).ready(function() {
 			if ( $('.menu-opener').hasClass('expanded') ) {
 				$(window).width() > 640 ? $('.menu__wrapper').show() : $('.menu-opener').removeClass('expanded');
 			}
+
+			$('.dropdown-menu__expander').nextAll().css('display', '');
 		});
 	})();
 
 
+	
 	(function() {
-		if ( $('.dropdown-menu__expander') ) {
-			console.log('hello');
-		}
-	})
+		$('.dropdown-menu__expander').click(function() {
+			
+			if ( $(window).width() < 640 ) {
+				$(this).nextAll().slideToggle('fast');
+			}
+
+		});
+	})();		
+
+	
 
 });
