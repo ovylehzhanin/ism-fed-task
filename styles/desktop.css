@@ -193,6 +193,7 @@
 	.sub-menu__wrapper {
 		display: none;
 		justify-content: flex-start;
+		padding: 0 1rem;
 		top: 100%;
 		left: 0;
 		width: 100%;
