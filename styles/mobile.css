@@ -587,6 +587,7 @@
 		border-style: solid;
 		border-color: #ac5c00;
 		border-radius: 3px;
+		outline: none;
 	}
 
 	.add-button:hover {
