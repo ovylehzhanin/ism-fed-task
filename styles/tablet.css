@@ -310,6 +310,7 @@
 	}
 
 	.left-column {
+		display: block;
 		width: 25%;
 		box-sizing: border-box;
 	}
@@ -360,6 +361,10 @@
 	}
 
 	.sorting__select {
+		-webkit-appearance: none;
+    	-moz-appearance: none;
+    	appearance: none;
+		outline: none;
 		height: 100%;
 		width: 180px;
 		padding: 0 1rem;
@@ -367,6 +372,7 @@
 		border-width: 0px 0px 1px 0px;
 		border-style: solid;
 		border-color: #c8c8c8;
+		color: #4c4c4c;
 		background-color: #fafafa;
 		background-image: url("../images/icons/arrow-down-grey.png");
 		background-repeat: no-repeat;
@@ -472,8 +478,8 @@
 		width: 40%;
 	}
 
-	.subscribe-form__submit::after {
-		right: 11%;
+	.subscribe-form__text {
+		width: 53.27868852459016%;
 	}
 
 	.copyrights { text-align: left; }

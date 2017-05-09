@@ -30,6 +30,7 @@ $(document).ready(function() {
 
 			if ( $(window).width() > 639 ) {
 				$('.sub-menu__wrapper').css('display', '');
+				$('.left-column').css('display', '');
 			}
 		});
 	})();
@@ -57,6 +58,13 @@ $(document).ready(function() {
 				$(this).parent().toggleClass('collapsed');
 				$(this).nextAll().slideToggle('fast');
 			}
+		});
+	})();
+
+	(function() {
+		$('.filters-opener').click(function() {
+			$(this).toggleClass('collapsed');
+			$('.left-column').slideToggle('fast');
 		});
 	})();
 

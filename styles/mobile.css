@@ -289,10 +289,15 @@
 		height: 7px;
 		background-image: url("../images/icons/arrow-down-blue.png");
 		background-repeat: no-repeat;
-		background-position: 50% 50%;
+		background-position: 50% 49%;
+	}
+
+	.filters-opener.collapsed .filters-opener__text::after {
+		background-image: url("../images/icons/arrow-up-blue.png");
 	}
 
 	.left-column {
+		display: none;
 		padding: 0 1.25rem;
 	}
 
@@ -346,7 +351,7 @@
 	}
 
 	.filters-list__expander.collapsed {
-		background-image: url("../images/icons/arrow-group-expan.png");
+		background-image: url("../images/icons/arrow-group-expand.png");
 	}
 
 	.filters-list__checkbox { display: none; }
@@ -385,22 +390,33 @@
 	}
 
 	.gender__select {
+		-webkit-appearance: none;
+    	-moz-appearance: none;
+    	appearance: none;
+		padding: 0 1rem;
 		margin-top: 1rem;
+		width: 100%;
 		height: 2.916666666666667rem; /* 35px / 12px */
-		padding: 1rem;
+		/*padding: 1rem;*/
 		background-color: #fafafa;
 		background-image: url("../images/icons/arrow-down-grey.png");
 		background-repeat: no-repeat;
 		background-position: 95% 1.25rem;
 		border-radius: 3px;
 		border-width: 0px 0px 1px 0px;
+		font-style: italic;
+		color: #999999;
 		border-style: solid;
 		border-color: #c8c8c8;
 	}
 
-	.gender__placeholder {
-		color: #999999;
-		font-style: italic;
+	.gender__select:focus {
+		outline: none;
+	}
+
+	.gender__select option {
+		color: #000;
+		font-style: normal;
 	}
 
 	/*.filters-list__checkbox { display: none; }*/
@@ -840,7 +856,7 @@
 	.subscribe-form__text {
 		float: left;
 		height: 100%;
-		width: 67%;
+		width: 60%;
 		padding: 0 1rem;
 		font-family: 'Oxygen', sans-serif;
 		font-size: 1.083333333333333rem; /* 13px / 12px */
@@ -866,8 +882,8 @@
 		position: relative;
 		float: right;
 		height: 100%;	
-		width: 32%;
-		padding-left: 3.5%;
+		width: 108px;
+		padding-left: 5.5%;
 		font-family: "Pathway Gothic One", sans-serif;
 		font-size: 1.416666666666667rem; /* 17px / 12px */
 		color: #fff;

@@ -316,9 +316,14 @@
 						<option value="">Male</option>
 						<option value="">Female</option>
 					</select> -->
-					<div class="gender__select">
+					<!-- <div class="gender__select">
 						<span class="gender__placeholder">Choose your gender ...</span>
-					</div>
+					</div> -->
+					<select name="gender" id="gender" class="gender__select" placeholder="Choose your gender ...">
+						<option class="gender__option selected" value="text" disabled selected hidden>Choose your gender ...</option>
+						<option class="gender__option" value="male">Male</option>
+						<option class="gender__option" value="female">Female</option>
+					</select>
 				</form>
 
 				<form class="filters-block" action="">
@@ -446,22 +451,22 @@
 			<!-- RIGHT -->
 			<section class="right-column">
 
-				<section class="view-settings">
+				<form class="view-settings" action="">
 					<div class="products-counter"><span>130</span> products in selection</div>
 					
-					<form action="" class="view-mode">
+					<div action="" class="view-mode">
 						<label class="view-mode__text" for="">View:</label>
 						<input type="radio" id="grid-view" name="view-mode" class="view-mode__radio grid-view" checked><label class="view-mode__label" for="grid-view"></label>
 						<input type="radio" id="list-view" name="view-mode" class="view-mode__radio list-view"><label class="view-mode__label" for="list-view"></label>
-					</form>
+					</div>
 
 					<div class="sorting">
 						<div class="sorting__label">Sort by:</div>
-						<div class="sorting__select">
-							<span class="sorting__placeholder">Price - ascending</span>
-						</div>
+						<select name="sort-by" id="soort-by" class="sorting__select">
+							<option value="">Price - ascending</option>
+						</select>
 					</div>
-				</section>
+				</form>
 
 				<section class="product-grid">
 					
@@ -641,11 +646,7 @@
 								<span class="r-product__sales-price">€ 686,<sup>25</sup></span>
 							</div>
 						</li>
-
-						
-
 					</ul>
-					
 				</section>
 
 		</section>
