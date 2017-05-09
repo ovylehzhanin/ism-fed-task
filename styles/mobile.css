@@ -202,14 +202,19 @@
 		background-image: url("../images/icons/arrow-group-expand.png");
 	}
 
-	.menu__item.collapser {
+	.menu__item.collapsed {
 		background-image: url("../images/icons/arrow-group-collapse.png");
 	}
 
 	.menu__link {
+		display: block;
 		line-height: 42px;
 		font-size: 1.666666666666667rem; /* 20px / 12px */
 		color: #000;
+	}
+
+	.sub-menu__wrapper {
+		display: none;
 	}
 
 	.sub-menu {
@@ -332,6 +337,16 @@
 	.active-filters__remove-link {
 		margin-right: 1rem;
 		font-weight: bold;
+	}
+
+	.filters-list__expander {
+		background-image: url("../images/icons/arrow-group-collapse.png");
+		background-repeat: no-repeat;
+		background-position: 98% 10px;
+	}
+
+	.filters-list__expander.collapsed {
+		background-image: url("../images/icons/arrow-group-expan.png");
 	}
 
 	.filters-list__checkbox { display: none; }
