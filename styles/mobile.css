@@ -163,6 +163,10 @@
 		border-left: 1px solid #e6e6e6;
 	}
 
+	.shopping-cart__text {
+		display: none;
+	}
+
 	.header__bottom {
 		order: 3;
 	}

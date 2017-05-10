@@ -118,8 +118,21 @@
 	}
 
 	.shopping-cart {
-		width: 42px;
+		padding-left: 42px;
+		padding-right: 10px;
 		height: 42px;
+		width: auto;
+		background-position-x: 15%;
+	}
+
+	.shopping-cart__text {
+		display: inline;
+		white-space: nowrap;
+		line-height: 42px;
+		font-family: 'Pathway Gothic One', sans-serif;
+		font-size: 1.083333333333333rem; /* 13px / 12px */
+		color: #999;
+		text-transform: uppercase;
 	}
 
 	.header__bottom {
