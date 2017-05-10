@@ -89,7 +89,7 @@
 			</div>
 		</div>
 
-		<section class="header__middle">
+		<div class="header__middle">
 			<!-- Mobile/tablet navigation opener -->
 			<div class="menu-opener"></div>
 			<!-- Page logo -->
@@ -104,7 +104,7 @@
 			<div class="shopping-cart">
 				<span class="shopping-cart__text">0 product(s)</span>
 			</div>
-		</section>
+		</div>
 
 
 		<div class="header__bottom">
@@ -233,7 +233,7 @@
 	</section>
 
 	<!-- Filter opener -->
-	<section class="filters-opener"><span class="filters-opener__text">Filters</span></section>
+	<div class="filters-opener"><span class="filters-opener__text">Filters</span></div>
 
 	<!-- Main content -->
 	<main class="main">
@@ -249,7 +249,7 @@
 					<div class="link-action"><a href="#">Remove all filters</a></div>
 				</section>
 
-				<form class="filters-block" action="">
+				<form class="filters-block">
 					<h3 class="filters-list__expander">Type Fiets</h3>
 					<ul class="filters-list">
 						<li class="filters-list__item">
@@ -304,7 +304,7 @@
 					<div class="link-action"><a href="#">Meer...</a></div>
 				</form>
 
-				<form class="filters-block" action="">
+				<form class="filters-block">
 					<h3 class="filters-list__expander">Gender</h3>
 					<!-- Select -->
 					<!-- <select name="" id="">
@@ -314,14 +314,14 @@
 					<!-- <div class="gender__select">
 						<span class="gender__placeholder">Choose your gender ...</span>
 					</div> -->
-					<select name="gender" id="gender" class="gender__select" placeholder="Choose your gender ...">
+					<select name="gender" id="gender" class="gender__select">
 						<option class="gender__option selected" value="text" disabled selected hidden>Choose your gender ...</option>
 						<option class="gender__option" value="male">Male</option>
 						<option class="gender__option" value="female">Female</option>
 					</select>
 				</form>
 
-				<form class="filters-block" action="">
+				<form class="filters-block">
 					<h3 class="filters-list__expander">Brands</h3>
 					<ul class="filters-list">
 						<li class="filters-list__item">
@@ -372,9 +372,9 @@
 					<div class="link-action"><a href="#">Meer...</a></div>	
 				</form>
 
-				<form class="filters-block" action="">
+				<form class="filters-block">
 					<h3 class="filters-list__expander">Price range</h3>
-					<form action="" class="range-filter">
+					<div class="range-filter">
 						<div class="range-slider">
 							<input type="range" min="0" max="5000" step="1" value="100">
 						</div>
@@ -383,10 +383,10 @@
 							<input type="text">
 							<button>Ok</button>
 						</div>
-					</form>
+					</div>
 				</form>
 
-				<form class="filters-block" action="">
+				<form class="filters-block">
 					<h3 class="filters-list__expander">Colors</h3>
 					<ul class="filters-list">
 						<li class="filters-list__item">
@@ -444,13 +444,13 @@
 			</aside>
 
 			<!-- RIGHT -->
-			<section class="right-column">
+			<div class="right-column">
 
-				<form class="view-settings" action="">
+				<form class="view-settings">
 					<div class="products-counter"><span>130</span> products in selection</div>
 					
-					<div action="" class="view-mode">
-						<label class="view-mode__text" for="">View:</label>
+					<div class="view-mode">
+						<label class="view-mode__text">View:</label>
 						<input type="radio" id="grid-view" name="view-mode" class="view-mode__radio grid-view" checked><label class="view-mode__label" for="grid-view"></label>
 						<input type="radio" id="list-view" name="view-mode" class="view-mode__radio list-view"><label class="view-mode__label" for="list-view"></label>
 					</div>
@@ -463,7 +463,7 @@
 					</div>
 				</form>
 
-				<section class="product-grid">
+				<div class="product-grid">
 					
 					<div class="product">
 						<div class="product__image-wrapper">
@@ -603,7 +603,7 @@
 					<!-- <div class="show-next">
 						<button>Show next 25 products</button>m
 					</div> -->
-				</section>
+				</div>
 				
 				<section class="recent-products-wrapper">
 					<h3 class="recent-products__title">Recently viewed</h3>
@@ -644,9 +644,9 @@
 					</ul>
 				</section>
 
-		</section>
+		</div>
 		<!-- UNDER -->
-		<section class="features">
+		<div class="features">
 			<ul class="features-list">
 				<li class="features-list__item returns">Free returns</li>
 				<li class="features-list__separator">/</li>
@@ -656,13 +656,13 @@
 				<li class="features-list__separator">/</li>
 				<li class="features-list__item payments">secure payments</li>
 			</ul>
-		</section>
+		</div>
 
 	</main>
 	<!-- Page footer -->
 	<footer class="footer">
 		
-			<section class="footer__top">
+			<div class="footer__top">
 				<section class="footer-column sitemap">
 					<h3 class="footer-column__title">Sitemap</h3>
 					<ul class="footer-column__list">
@@ -696,23 +696,23 @@
 				<section class="footer-column subscribe">
 					<h3 class="footer-column__title">Subscribe to our newsletter</h3>
 					<p class="subscribe__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliqua lorem enim, fermentum semper viverra t amet.</p>
-					<form action="" class="subscribe-form">
+					<form class="subscribe-form">
 						<input class="subscribe-form__text" placeholder="Enter e-mail address ..." type="text"><button class="subscribe-form__submit" type="submit">Subscribe</button>
 					</form>
 				</section>
-			</section>
+			</div>
 
-			<section class="footer__bottom">
-				<section class="copyrights">© Copyright 2017 Sana Commerce. All rights reserved.</section>
-				<section class="footer-links">
+			<div class="footer__bottom">
+				<div class="copyrights">© Copyright 2017 Sana Commerce. All rights reserved.</div>
+				<div class="footer-links">
 					<a class="footer-links__link" href="#">About us</a>
 					<a class="footer-links__link" href="#">Contact us</a>
 					<a class="footer-links__link" href="#">Help</a>
 					<a class="footer-links__link" href="#">Privacy policy</a>
 					<a class="footer-links__link" href="#">Disclaimer</a>
 					<a class="footer-links__link" href="#">New item</a>
-				</section>
-			</section>
+				</div>
+			</div>
 		
 	</footer>
 	
