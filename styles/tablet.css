@@ -92,12 +92,18 @@
 		right: -1px;
 	}
 
-	.my-account .dropdown-menu__item:first-child {
-		box-shadow: 0 1.083333333333333rem 0 -1rem #e6e6e6; /* 13px / 12px */
+	.my-account .dropdown-menu__item:first-child .my-account__item,
+	.my-account .dropdown-menu__item:last-child .my-account__item {
+		border-style: solid;
+		border-color: #e6e6e6;
 	}
 
-	.my-account .dropdown-menu__item:last-child {
-		box-shadow: 0 -1.083333333333333rem 0 -1rem #e6e6e6; /* 13px / 12px */
+	.my-account .dropdown-menu__item:first-child .my-account__item {
+		border-width: 0px 0px 1px 0px;
+	}
+
+	.my-account .dropdown-menu__item:last-child .my-account__item {
+		border-width: 1px 0px 0px 0px;
 	}
 
 	.dropdown-menu__item:last-child .my-account__item {
